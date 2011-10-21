@@ -54,29 +54,29 @@
     &.the-wringer a
       background: image_url("obstacles/sprite.png") -1100px 13px no-repeat
 
-  #obstacle
+#obstacle
+  float: right
+  width: 460px
+  +clearfix
+  header
+    +box-sizing(border-box)
+    height: 220px
+    margin-bottom: 20px
+    padding-top: 55px
+    text-align: center
+    background: image_url("slime/medium.png") center 0 no-repeat
+  h1, h2
+    +rotate(-7.5deg)
+  h1
+    font-size: 40px
+    line-height: 48px
+    margin-bottom: 16px
+    +single-text-shadow(rgba(0, 0, 0, .2), 2px, 3px, 0)
+  h2
+    font-size: 21px
+    +single-text-shadow(rgba(0, 0, 0, .2), 2px, 3px, 0)
+  img
     float: right
-    width: 460px
-    +clearfix
-    header
-      +box-sizing(border-box)
-      height: 220px
-      margin-bottom: 20px
-      padding-top: 55px
-      text-align: center
-      background: image_url("slime/medium.png") center 0 no-repeat
-    h1, h2
-      +rotate(-7.5deg)
-    h1
-      font-size: 40px
-      line-height: 48px
-      margin-bottom: 16px
-      +single-text-shadow(rgba(0, 0, 0, .2), 2px, 3px, 0)
-    h2
-      font-size: 21px
-      +single-text-shadow(rgba(0, 0, 0, .2), 2px, 3px, 0)
-    img
-      float: right
-      max-width: 420px
-      max-height: 465px
-      margin: 0 auto
+    max-width: 420px
+    max-height: 465px
+    margin: 0 auto
