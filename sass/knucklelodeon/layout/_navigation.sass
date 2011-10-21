@@ -1,0 +1,25 @@
+body > nav
+  position: fixed
+  width: 100%
+  height: 32px
+  text-align: center
+  line-height: 24px
+  background: rgba(15, 40, 48, .05)
+  z-index: 10
+  +single-transition(background, .4s)  
+  li
+    +inline-block
+    margin-right: 50px
+    &:last-child
+      margin-right: 0
+  a
+    +open-sans
+    text-transform: uppercase    
+    font-size: 18px
+    letter-spacing: 1px  
+    +single-transition(color, .4s)
+    &:hover
+      color: $txt_yellow
+      
+body > nav.scrolling
+  background: rgba(15, 40, 48, .75)

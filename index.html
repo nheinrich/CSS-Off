@@ -8,70 +8,76 @@
   <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
   <link href="stylesheets/knucklelodeon.css" media="screen" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-  <div id="container">
-    <nav>
-      <ul>
-        <li><a href="#obstacles">Obstacles</a></li>
-        <li><a href="#prizes">Prizes</a></li>
-        <li><a href="#register">Be a Contestant</a></li>
-        <li><a href="#container">Back to Top</a></li>
-      </ul>
-    </nav>
 
-    <section id="intro">
-      <h1>Triple Dare</h1>
-      <h2>The Web's Messiest Challenge!</h2>
-      <h3>Airing Thursdays on the Knucklelodeon Network™</h3>
-    </section>
+  <nav>
+    <!-- inline due to inline-block spacing -->
+    <ul><li><a href="#obstacles">Obstacles</a></li><li><a href="#prizes">Prizes</a></li><li><a href="#register">Be a Contestant</a></li><li><a href="#">Back to Top</a></li></ul>
+  </nav>
 
-    <section id="obstacles">
-      <h1>Obstacles</h1>
+  <section id="intro">
+    <h1>Triple Dare</h1>
+    <h2>The Web's Messiest Challenge!</h2>
+    <h3>Airing Thursdays on the Knucklelodeon Network™</h3>
+  </section>
+
+  <section id="obstacles">
+    <div class="container">
+
+      <header class="section">
+        <h1>Obstacles</h1>
+      </header>
+
       <nav>
         <ul>
-          <li>
+          <li class="the-tank">
             <a href="#the-tank" title="Swim through a bath of slime!">
               The Tank
             </a>
           </li>
-          <li>
+          <li class="sundae-slide">
             <a href="#sundae-slide" title="Slippery slide of sweetness!">
               Sundae Slide
             </a>
           </li>
-          <li>
-            <a href="#human-hamster-wheel" title="Don't stop running little Hamster!">
+          <li class="human-hamster-wheel">
+            <a href="#human-hamster-wheel" title="Run little Hamster!">
               Human Hamster Wheel
             </a>
           </li>
-          <li>
+          <li class="down-the-hatch selected">
             <a href="#down-the-hatch" title="6ft slide covered in gunk!">
               Down the Hatch
             </a>
           </li>
-          <li>
-            <a href="#pick-it" title="Snatch boogers from a giant nose!">
+          <li class="pick-it">
+            <a href="#pick-it" title="Prepare for a snot shower!">
               Pick It!
             </a>
           </li>
-          <li>
+          <li class="the-wringer">
             <a href="#the-wringer" title="Hang yourself out to dry!">
               The Wringer
             </a>
           </li>
         </ul>
       </nav>
-      <div class="obstacle">
+      <div id="obstacle">
         <header>
           <h1>Down the Hatch</h1>
           <h2>6ft slide covered in gunk!</h2>
         </header>
         <img src="images/obstacles/down-the-hatch.png" alt="Down the Hatch">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="prizes">
-      <h1>Prizes</h1>
+  <section id="prizes">
+    <div class="container">
+      <header class="section">
+        <h1 class="section">Prizes</h1>
+      </header>
       <ul>
         <li>
           <img src="images/prizes/space-camp.png" alt="Space Camp" />
@@ -90,10 +96,14 @@
           <h2>A 13 Inch TV/VCR Combo!</h2>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <section id="register">
-      <h1>Be a Contestant</h1>
+  <section id="register">
+    <div class="container">
+      <header class="section">
+        <h1 class="section">Be a Contestant</h1>
+      </header>
       <form>
         <label for="name">Your Name</label>
         <input type="text" id="name" />
@@ -113,9 +123,11 @@
         <div id="timer">60</div>
         <span>The Clock is Ticking!</span>
       </aside>
-    </section>
+    </div>
+  </section>
 
-    <section id="footer">
+  <section id="footer">
+    <div class="container">
       <h1>The Knucklelodeon Network</h1>
       <p>
         The Knucklelodeon Network is not affiliated<br/>
@@ -124,7 +136,7 @@
       </p>
       <p>
         Triple Dare contestants consent to potential<br/>
-        physical bodily harm, like being buried<br/> 
+        physical bodily harm, like being buried<br/>
         alive by a giant waffle.
       </p>
       <h2>Visit Our Studios</h2>
@@ -138,12 +150,15 @@
       </address>
       <div class="license">
         <span>
-          This design is licensed under a Creative Commons 
+          This design is licensed under a Creative Commons
           Attribution-NonCommercial-NoDerivs 3.0 License
         </span>
         <img src="images/creative_commons.png" alt="Creative Commons Badge" />
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <script src="javascripts/jquery-1.6.4.min.js"></script>
+  <script src="javascripts/knucklelodeon.js"></script>
 </body>
 </html>

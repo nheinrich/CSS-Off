@@ -1,0 +1,36 @@
+#register
+  background: $bg_blue image_url("patterns/blue.png")
+  border-top: 8px solid rgba(0, 0, 0, .1)
+
+  .container
+    +clearfix
+    padding: 50px 0 60px
+    
+  header.section h1
+    width: 440px
+    background: $bg_blue image_url("patterns/blue.png")
+
+  form
+    +column(5)
+    float: left
+
+  aside
+    +column(6)
+    float: right    
+    text-align: center
+    #timer
+      width: 386px
+      height: 329px
+      +box-sizing(border-box)
+      margin: 0 auto 25px
+      padding: 89px 0 0 5px
+      +digital-dream
+      background: image_url("layout/timer.png")
+    span
+      display: block
+      width: 360px
+      margin: 0 auto
+      text-align: center
+      font-size: 40px
+      line-height: 50px
+      +single-text-shadow(rgba(0, 0, 0, .2), 2px, 3px, 0)

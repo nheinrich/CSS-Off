@@ -1,0 +1,35 @@
+#prizes
+  background: $bg_green image_url("patterns/green.png")
+  border-top: 8px solid rgba(0, 0, 0, .1)
+  border-bottom: 8px solid rgba(0, 0, 0, .1)
+  
+  .container
+    padding: 50px 0 80px
+
+  header.section
+    margin-bottom: 65px
+    h1
+      width: 180px
+      background: $bg_green image_url("patterns/green.png")
+
+  img
+    margin: 0 auto 20px
+
+  ul
+    +clearfix
+  li
+    width: 400px
+    float: left
+    margin: 0 40px 100px
+    text-align: center
+    letter-spacing: 0
+    &:nth-child(even)
+      float: right
+      margin-left: 0
+    &:nth-child(2)
+      img
+        margin-bottom: 15px
+    &:nth-child(n+2)
+      margin-bottom: 22px
+    &:last-child
+      margin-top: -195px

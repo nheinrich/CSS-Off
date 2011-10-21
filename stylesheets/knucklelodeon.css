@@ -62,3 +62,426 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+/* line 1, ../sass/knucklelodeon/layout/_background.sass */
+body {
+  background: #6ec2d8 url('/images/layout/slime_overlay.png?1319155288') 78% -200px no-repeat;
+}
+
+/* line 1, ../sass/knucklelodeon/layout/_typography.sass */
+body {
+  color: white;
+  font-family: "Komika Title - Paint";
+  letter-spacing: 0.15em;
+}
+
+/* line 5, ../sass/knucklelodeon/layout/_typography.sass */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 9, ../sass/knucklelodeon/layout/_typography.sass */
+header.section h1 {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  height: 40px;
+  font-size: 40px;
+  line-height: 32px;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+}
+/* line 7, ../../../../.rvm/gems/ruby-1.9.2-p290@css-off/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+header.section h1 {
+  *display: inline;
+}
+
+/* line 1, ../sass/knucklelodeon/layout/_navigation.sass */
+body > nav {
+  position: fixed;
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  line-height: 24px;
+  background: rgba(15, 40, 48, 0.05);
+  z-index: 10;
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 10, ../sass/knucklelodeon/layout/_navigation.sass */
+body > nav li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin-right: 50px;
+}
+/* line 7, ../../../../.rvm/gems/ruby-1.9.2-p290@css-off/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+body > nav li {
+  *display: inline;
+}
+/* line 13, ../sass/knucklelodeon/layout/_navigation.sass */
+body > nav li:last-child {
+  margin-right: 0;
+}
+/* line 15, ../sass/knucklelodeon/layout/_navigation.sass */
+body > nav a {
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+/* line 21, ../sass/knucklelodeon/layout/_navigation.sass */
+body > nav a:hover {
+  color: #f3f200;
+}
+
+/* line 24, ../sass/knucklelodeon/layout/_navigation.sass */
+body > nav.scrolling {
+  background: rgba(15, 40, 48, 0.75);
+}
+
+/* line 1, ../sass/knucklelodeon/layout/_footer.sass */
+#footer {
+  font-family: "Open Sans";
+  background: url('/images/patterns/blue.png?1319161002');
+}
+
+/* line 1, ../sass/knucklelodeon/sections/_intro.sass */
+#intro {
+  padding: 69px 0 85px;
+  background: url('/images/patterns/blue.png?1319161002') -60px 0;
+}
+/* line 4, ../sass/knucklelodeon/sections/_intro.sass */
+#intro h1 {
+  position: relative;
+  left: -34px;
+  width: 490px;
+  height: 430px;
+  margin: 0 auto 39px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/layout/logo.png?1319164867');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/* line 11, ../sass/knucklelodeon/sections/_intro.sass */
+#intro h2, #intro h3 {
+  text-align: center;
+}
+/* line 13, ../sass/knucklelodeon/sections/_intro.sass */
+#intro h2 {
+  color: #ff5822;
+  text-align: center;
+  font-size: 51px;
+  text-shadow: white 2px 3px 0;
+  margin-bottom: 18px;
+}
+/* line 19, ../sass/knucklelodeon/sections/_intro.sass */
+#intro h3 {
+  font-family: "Open Sans";
+  font-size: 22px;
+  letter-spacing: 0.95px;
+}
+
+/* line 1, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles {
+  background: #ff5924 url('/images/patterns/orange.png?1319163002');
+  border-top: 8px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.1);
+}
+/* line 6, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles .container {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 50px 0 60px;
+}
+/* line 10, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles header.section h1 {
+  width: 280px;
+  background: #ff5924 url('/images/patterns/orange.png?1319163002');
+}
+/* line 14, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles ul {
+  width: 460px;
+  float: left;
+}
+/* line 18, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li {
+  position: relative;
+  float: left;
+  width: 220px;
+  height: 220px;
+  margin: 0 20px 20px 0;
+  background: #6db933 url('/images/patterns/green.png?1319162909');
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 27, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li a {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 220px;
+  height: 220px;
+  padding-top: 195px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  -moz-transition-property: color;
+  -webkit-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 37, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li:nth-child(even) {
+  margin-right: 0;
+}
+/* line 39, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li:hover, #obstacles li.selected {
+  background: #e9f82e url('/images/patterns/yellow.png?1319162899');
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0;
+}
+/* line 42, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li:hover a, #obstacles li.selected a {
+  color: #ff5822;
+}
+/* line 44, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li.the-tank a {
+  background: url('/images/obstacles/obstacles.png?1319171021') 0 13px no-repeat;
+}
+/* line 46, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li.sundae-slide a {
+  background: url('/images/obstacles/obstacles.png?1319171021') -220px 13px no-repeat;
+}
+/* line 48, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li.human-hamster-wheel a {
+  background: url('/images/obstacles/obstacles.png?1319171021') -440px 13px no-repeat;
+}
+/* line 50, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li.down-the-hatch a {
+  background: url('/images/obstacles/obstacles.png?1319171021') -660px 13px no-repeat;
+}
+/* line 52, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li.pick-it a {
+  background: url('/images/obstacles/obstacles.png?1319171021') -880px 13px no-repeat;
+}
+/* line 54, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles li.the-wringer a {
+  background: url('/images/obstacles/obstacles.png?1319171021') -1100px 13px no-repeat;
+}
+/* line 57, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles #obstacle {
+  float: right;
+  width: 460px;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 61, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles #obstacle header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 220px;
+  margin-bottom: 20px;
+  padding-top: 55px;
+  text-align: center;
+  background: url('/images/layout/slime.png?1319183503') center 0 no-repeat;
+}
+/* line 68, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles #obstacle h1, #obstacles #obstacle h2 {
+  -moz-transform: rotate(-7.5deg);
+  -webkit-transform: rotate(-7.5deg);
+  -o-transform: rotate(-7.5deg);
+  -ms-transform: rotate(-7.5deg);
+  transform: rotate(-7.5deg);
+}
+/* line 70, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles #obstacle h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 16px;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+}
+/* line 75, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles #obstacle h2 {
+  font-size: 21px;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+}
+/* line 78, ../sass/knucklelodeon/sections/_obstacles.sass */
+#obstacles #obstacle img {
+  float: right;
+  max-width: 420px;
+  max-height: 465px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes {
+  background: #6db933 url('/images/patterns/green.png?1319162909');
+  border-top: 8px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.1);
+}
+/* line 6, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes .container {
+  padding: 50px 0 80px;
+}
+/* line 9, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes header.section {
+  margin-bottom: 65px;
+}
+/* line 11, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes header.section h1 {
+  width: 180px;
+  background: #6db933 url('/images/patterns/green.png?1319162909');
+}
+/* line 15, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes img {
+  margin: 0 auto 20px;
+}
+/* line 18, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 20, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes li {
+  width: 400px;
+  float: left;
+  margin: 0 40px 100px;
+  text-align: center;
+  letter-spacing: 0;
+}
+/* line 26, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes li:nth-child(even) {
+  float: right;
+  margin-left: 0;
+}
+/* line 30, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes li:nth-child(2) img {
+  margin-bottom: 15px;
+}
+/* line 32, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes li:nth-child(n+2) {
+  margin-bottom: 22px;
+}
+/* line 34, ../sass/knucklelodeon/sections/_prizes.sass */
+#prizes li:last-child {
+  margin-top: -195px;
+}
+
+/* line 1, ../sass/knucklelodeon/sections/_register.sass */
+#register {
+  background: #6ec2d8 url('/images/patterns/blue.png?1319161002');
+  border-top: 8px solid rgba(0, 0, 0, 0.1);
+}
+/* line 5, ../sass/knucklelodeon/sections/_register.sass */
+#register .container {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 50px 0 60px;
+}
+/* line 9, ../sass/knucklelodeon/sections/_register.sass */
+#register header.section h1 {
+  width: 440px;
+  background: #6ec2d8 url('/images/patterns/blue.png?1319161002');
+}
+/* line 13, ../sass/knucklelodeon/sections/_register.sass */
+#register form {
+  width: 380px;
+  margin-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+/* line 17, ../sass/knucklelodeon/sections/_register.sass */
+#register aside {
+  width: 460px;
+  margin-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  float: right;
+  text-align: center;
+}
+/* line 21, ../sass/knucklelodeon/sections/_register.sass */
+#register aside #timer {
+  width: 386px;
+  height: 329px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto 25px;
+  padding: 89px 0 0 5px;
+  font-family: "Digital dream Fat";
+  font-size: 140px;
+  color: #f3f200;
+  text-shadow: black 7px 11px 0;
+  background: url('/images/layout/timer.png?1319180844');
+}
+/* line 29, ../sass/knucklelodeon/sections/_register.sass */
+#register aside span {
+  display: block;
+  width: 360px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+}
+
+/* line 6, ../sass/knucklelodeon/sections/_all.sass */
+section > .container {
+  width: 940px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+/* line 9, ../sass/knucklelodeon/sections/_all.sass */
+section > .container > header.section {
+  margin-bottom: 55px;
+  background: url('/images/patterns/checkers.png?1319167103');
+}
