@@ -1,13 +1,14 @@
 #register
   +texture-blue(false)
   border-top: 8px solid rgba(0, 0, 0, .1)
-
+  padding-bottom: 150px
+  
   .container
     +clearfix
     padding: 50px 0 60px
-    
+
   header.section h1
-    width: 440px
+    width: 420px
     +texture-blue
 
   form
@@ -15,8 +16,9 @@
     float: left
 
   aside
-    +column(6)
-    float: right    
+    +column(6, true)
+    float: right
+    padding-top: 20px
     text-align: center
     #timer
       width: 386px
@@ -31,6 +33,6 @@
       width: 360px
       margin: 0 auto
       text-align: center
-      font-size: 40px
+      font-size: 39px
       line-height: 50px
-      +single-text-shadow(rgba(0, 0, 0, .2), 2px, 3px, 0)
+      +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)

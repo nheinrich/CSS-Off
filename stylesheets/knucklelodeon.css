@@ -124,10 +124,10 @@ body > nav a {
   -webkit-transition-property: color;
   -o-transition-property: color;
   transition-property: color;
-  -moz-transition-duration: 0.4s;
-  -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 body > nav a:hover {
   color: #f3f200;
@@ -140,6 +140,54 @@ body > nav.scrolling {
 #footer {
   font-family: "Open Sans";
   background: url('/images/textures/gray.png?1319237789');
+  letter-spacing: 1px;
+}
+#footer .container {
+  border-top: 7px solid rgba(0, 0, 0, 0.075);
+}
+#footer .container h1, #footer .container h2 {
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+#footer .container h1 {
+  margin-top: -45px;
+  padding-top: 105px;
+  background: url('/images/logos/knucklelodeon.png?1319258054') top center no-repeat;
+}
+#footer .container > div {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 33px;
+}
+#footer .container > div p, #footer .container > div address {
+  float: right;
+  width: 460px;
+  margin-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+}
+#footer .container > div p:first-child, #footer .container > div address:first-child {
+  float: left;
+  text-align: right;
+}
+#footer .license {
+  border-top: 7px solid rgba(0, 0, 0, 0.075);
+  padding-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0;
+  margin-bottom: 0 !important;
+}
+#footer .license img {
+  display: block;
+  margin: 25px auto;
 }
 
 #intro {
@@ -228,6 +276,7 @@ body > nav.scrolling {
   text-align: center;
   font-size: 14px;
   letter-spacing: 1px;
+  color: white;
   -moz-transition-property: color;
   -webkit-transition-property: color;
   -o-transition-property: color;
@@ -260,7 +309,6 @@ body > nav.scrolling {
 }
 #obstacles li:hover, #obstacles li.selected {
   background: #e9f82e url('/images/textures/gray.png?1319237789');
-  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0;
 }
 #obstacles li:hover a, #obstacles li.selected a {
   color: #ff5822;
@@ -366,6 +414,7 @@ body > nav.scrolling {
 #register {
   background: url('/images/textures/gray.png?1319237789');
   border-top: 8px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 150px;
 }
 #register .container {
   overflow: hidden;
@@ -373,7 +422,7 @@ body > nav.scrolling {
   padding: 50px 0 60px;
 }
 #register header.section h1 {
-  width: 440px;
+  width: 420px;
   background: #6ec2d8 url('/images/textures/gray.png?1319237789');
 }
 #register form {
@@ -392,7 +441,9 @@ body > nav.scrolling {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
+  margin-right: 0;
   float: right;
+  padding-top: 20px;
   text-align: center;
 }
 #register aside #timer {
@@ -415,9 +466,9 @@ body > nav.scrolling {
   width: 360px;
   margin: 0 auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 39px;
   line-height: 50px;
-  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 
 section > .container {
