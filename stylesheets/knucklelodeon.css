@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background: #6ec2d8 url('/images/slime/bg_overlay.png?1319232550') 78% -200px no-repeat;
+  background: #6ec2d8 url('/images/slime/bg_overlay.png?1319239897') 78% -200px no-repeat;
 }
 
 body {
@@ -118,8 +118,8 @@ body > nav li:last-child {
 body > nav a {
   font-family: "Open Sans";
   text-transform: uppercase;
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
   -moz-transition-property: color;
   -webkit-transition-property: color;
   -o-transition-property: color;
@@ -139,12 +139,13 @@ body > nav.scrolling {
 
 #footer {
   font-family: "Open Sans";
-  background: url('/images/textures/blue.png?1319231384');
+  background: url('/images/textures/gray.png?1319237789');
 }
 
 #intro {
   padding: 69px 0 85px;
-  background: url('/images/textures/blue.png?1319231384') -60px 0;
+  background: url('/images/textures/gray.png?1319237789');
+  background-position: -60px 0;
 }
 #intro h1 {
   position: relative;
@@ -155,7 +156,7 @@ body > nav.scrolling {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/logos/triple-dare.png?1319232481');
+  background-image: url('/images/logos/triple-dare.png?1319239745');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -176,7 +177,7 @@ body > nav.scrolling {
 }
 
 #obstacles {
-  background: #ff5924 url('/images/textures/orange.png?1319231566');
+  background: #ff5924 url('/images/textures/gray.png?1319237789');
   border-top: 8px solid rgba(0, 0, 0, 0.1);
   border-bottom: 8px solid rgba(0, 0, 0, 0.1);
 }
@@ -187,7 +188,7 @@ body > nav.scrolling {
 }
 #obstacles header.section h1 {
   width: 280px;
-  background: #ff5924 url('/images/textures/orange.png?1319231566');
+  background: #ff5924 url('/images/textures/gray.png?1319237789');
 }
 #obstacles ul {
   width: 460px;
@@ -199,7 +200,7 @@ body > nav.scrolling {
   width: 220px;
   height: 220px;
   margin: 0 20px 20px 0;
-  background: #6db933 url('/images/textures/green.png?1319231598');
+  background: #6db933 url('/images/textures/gray.png?1319237789');
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -239,37 +240,38 @@ body > nav.scrolling {
 #obstacles li:nth-child(even) {
   margin-right: 0;
 }
+#obstacles li.the-tank a {
+  background: url('/images/obstacles/sprite.png?1319242927') 0 -12px no-repeat;
+}
+#obstacles li.sundae-slide a {
+  background: url('/images/obstacles/sprite.png?1319242927') -220px -12px no-repeat;
+}
+#obstacles li.human-hamster-wheel a {
+  background: url('/images/obstacles/sprite.png?1319242927') -440px -12px no-repeat;
+}
+#obstacles li.down-the-hatch a {
+  background: url('/images/obstacles/sprite.png?1319242927') -660px -12px no-repeat;
+}
+#obstacles li.pick-it a {
+  background: url('/images/obstacles/sprite.png?1319242927') -880px -12px no-repeat;
+}
+#obstacles li.the-wringer a {
+  background: url('/images/obstacles/sprite.png?1319242927') -1100px -12px no-repeat;
+}
 #obstacles li:hover, #obstacles li.selected {
-  background: #e9f82e url('/images/textures/yellow.png?1319231659');
+  background: #e9f82e url('/images/textures/gray.png?1319237789');
   text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0;
 }
 #obstacles li:hover a, #obstacles li.selected a {
   color: #ff5822;
-}
-#obstacles li.the-tank a {
-  background: url('/images/obstacles/sprite.png?1319232286') 0 13px no-repeat;
-}
-#obstacles li.sundae-slide a {
-  background: url('/images/obstacles/sprite.png?1319232286') -220px 13px no-repeat;
-}
-#obstacles li.human-hamster-wheel a {
-  background: url('/images/obstacles/sprite.png?1319232286') -440px 13px no-repeat;
-}
-#obstacles li.down-the-hatch a {
-  background: url('/images/obstacles/sprite.png?1319232286') -660px 13px no-repeat;
-}
-#obstacles li.pick-it a {
-  background: url('/images/obstacles/sprite.png?1319232286') -880px 13px no-repeat;
-}
-#obstacles li.the-wringer a {
-  background: url('/images/obstacles/sprite.png?1319232286') -1100px 13px no-repeat;
+  background-position-y: -233px !important;
 }
 
 #obstacle {
+  position: relative;
   float: right;
   width: 460px;
-  overflow: hidden;
-  *zoom: 1;
+  height: 700px;
 }
 #obstacle header {
   -moz-box-sizing: border-box;
@@ -280,7 +282,7 @@ body > nav.scrolling {
   margin-bottom: 20px;
   padding-top: 55px;
   text-align: center;
-  background: url('/images/slime/medium.png?1319232565') center 0 no-repeat;
+  background: url('/images/slime/medium.png?1319240408') center 0 no-repeat;
 }
 #obstacle h1, #obstacle h2 {
   -moz-transform: rotate(-7.5deg);
@@ -300,14 +302,22 @@ body > nav.scrolling {
   text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
 }
 #obstacle img {
-  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
   max-width: 420px;
   max-height: 465px;
   margin: 0 auto;
 }
+#obstacle.sundae-slide img {
+  right: 30px;
+}
+#obstacle.down-the-hatch img {
+  right: 65px;
+}
 
 #prizes {
-  background: #6db933 url('/images/textures/green.png?1319231598');
+  background: #6db933 url('/images/textures/gray.png?1319237789');
   border-top: 8px solid rgba(0, 0, 0, 0.1);
   border-bottom: 8px solid rgba(0, 0, 0, 0.1);
 }
@@ -319,7 +329,7 @@ body > nav.scrolling {
 }
 #prizes header.section h1 {
   width: 180px;
-  background: #6db933 url('/images/textures/green.png?1319231598');
+  background: #6db933 url('/images/textures/gray.png?1319237789');
 }
 #prizes img {
   margin: 0 auto 20px;
@@ -350,7 +360,7 @@ body > nav.scrolling {
 }
 
 #register {
-  background: #6ec2d8 url('/images/textures/blue.png?1319231384');
+  background: url('/images/textures/gray.png?1319237789');
   border-top: 8px solid rgba(0, 0, 0, 0.1);
 }
 #register .container {
@@ -360,7 +370,7 @@ body > nav.scrolling {
 }
 #register header.section h1 {
   width: 440px;
-  background: #6ec2d8 url('/images/textures/blue.png?1319231384');
+  background: #6ec2d8 url('/images/textures/gray.png?1319237789');
 }
 #register form {
   width: 380px;
@@ -394,7 +404,7 @@ body > nav.scrolling {
   font-size: 140px;
   color: #f3f200;
   text-shadow: black 7px 11px 0;
-  background: url('/images/register/timer.png?1319232600');
+  background: url('/images/register/timer.png?1319238517');
 }
 #register aside span {
   display: block;
