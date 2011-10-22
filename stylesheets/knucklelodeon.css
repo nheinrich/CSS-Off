@@ -76,9 +76,9 @@ header.section h1 {
   vertical-align: middle;
   *vertical-align: auto;
   height: 40px;
-  font-size: 40px;
-  line-height: 32px;
-  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+  font-size: 39px;
+  line-height: 30px;
+  text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 header.section h1 {
   *display: inline;
@@ -292,14 +292,14 @@ body > nav.scrolling {
   transform: rotate(-7.5deg);
 }
 #obstacle h1 {
-  font-size: 40px;
+  font-size: 39px;
   line-height: 48px;
   margin-bottom: 16px;
-  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 #obstacle h2 {
   font-size: 21px;
-  text-shadow: rgba(0, 0, 0, 0.2) 2px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 #obstacle img {
   position: absolute;
