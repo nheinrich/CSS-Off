@@ -326,6 +326,7 @@ body > nav.scrolling {
 }
 #prizes header.section {
   margin-bottom: 65px;
+  background-position: 0 -20px;
 }
 #prizes header.section h1 {
   width: 180px;
@@ -341,9 +342,12 @@ body > nav.scrolling {
 #prizes li {
   width: 400px;
   float: left;
-  margin: 0 40px 100px;
+  margin: 0 20px 100px 20px;
   text-align: center;
   letter-spacing: 0;
+}
+#prizes li:nth-child(odd) {
+  clear: left;
 }
 #prizes li:nth-child(even) {
   float: right;

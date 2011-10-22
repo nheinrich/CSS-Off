@@ -8,6 +8,7 @@
 
   header.section
     margin-bottom: 65px
+    background-position: 0 -20px
     h1
       width: 180px
       +texture-green
@@ -20,9 +21,11 @@
   li
     width: 400px
     float: left
-    margin: 0 40px 100px
+    margin: 0 20px 100px 20px
     text-align: center
     letter-spacing: 0
+    &:nth-child(odd)
+      clear: left
     &:nth-child(even)
       float: right
       margin-left: 0
