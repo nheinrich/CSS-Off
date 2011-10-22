@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background: #6ec2d8 url('/images/slime/bg_overlay.png?1319239897') 83% -200px no-repeat;
+  background: #6ec2d8 url('/images/slime/bg_overlay.png?1319259254') 83% -200px no-repeat;
 }
 
 body {
@@ -124,10 +124,10 @@ body > nav a {
   -webkit-transition-property: color;
   -o-transition-property: color;
   transition-property: color;
-  -moz-transition-duration: 0.5s;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 body > nav a:hover {
   color: #f3f200;
@@ -139,7 +139,7 @@ body > nav.scrolling {
 
 #footer {
   font-family: "Open Sans";
-  background: url('/images/textures/gray.png?1319237789');
+  background: url('/images/textures/gray.png?1319259254');
   letter-spacing: 1px;
 }
 #footer .container {
@@ -153,7 +153,7 @@ body > nav.scrolling {
 #footer .container h1 {
   margin-top: -45px;
   padding-top: 105px;
-  background: url('/images/logos/knucklelodeon.png?1319258054') top center no-repeat;
+  background: url('/images/logos/knucklelodeon.png?1319259254') top center no-repeat;
 }
 #footer .container > div {
   overflow: hidden;
@@ -192,7 +192,7 @@ body > nav.scrolling {
 
 #intro {
   padding: 69px 0 85px;
-  background: url('/images/textures/gray.png?1319237789');
+  background: url('/images/textures/gray.png?1319259254');
   background-position: -60px 0;
 }
 #intro h1 {
@@ -204,7 +204,7 @@ body > nav.scrolling {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/logos/triple-dare.png?1319239745');
+  background-image: url('/images/logos/triple-dare.png?1319259254');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -225,7 +225,7 @@ body > nav.scrolling {
 }
 
 #obstacles {
-  background: #ff5924 url('/images/textures/gray.png?1319237789');
+  background: #ff5924 url('/images/textures/gray.png?1319259254');
   border-top: 8px solid rgba(0, 0, 0, 0.1);
   border-bottom: 8px solid rgba(0, 0, 0, 0.1);
 }
@@ -236,7 +236,7 @@ body > nav.scrolling {
 }
 #obstacles header.section h1 {
   width: 280px;
-  background: #ff5924 url('/images/textures/gray.png?1319237789');
+  background: #ff5924 url('/images/textures/gray.png?1319259254');
 }
 #obstacles ul {
   width: 460px;
@@ -248,7 +248,7 @@ body > nav.scrolling {
   width: 220px;
   height: 220px;
   margin: 0 20px 20px 0;
-  background: #6db933 url('/images/textures/gray.png?1319237789');
+  background: #6db933 url('/images/textures/gray.png?1319259254');
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -259,10 +259,10 @@ body > nav.scrolling {
   -webkit-transition-property: background;
   -o-transition-property: background;
   transition-property: background;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 #obstacles li a {
   display: block;
@@ -281,34 +281,34 @@ body > nav.scrolling {
   -webkit-transition-property: color;
   -o-transition-property: color;
   transition-property: color;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 #obstacles li:nth-child(even) {
   margin-right: 0;
 }
 #obstacles li.the-tank a {
-  background: url('/images/obstacles/sprite.png?1319242927') 0 -12px no-repeat;
+  background: url('/images/obstacles/sprite.png?1319259254') 0 -12px no-repeat;
 }
 #obstacles li.sundae-slide a {
-  background: url('/images/obstacles/sprite.png?1319242927') -220px -12px no-repeat;
+  background: url('/images/obstacles/sprite.png?1319259254') -220px -12px no-repeat;
 }
 #obstacles li.human-hamster-wheel a {
-  background: url('/images/obstacles/sprite.png?1319242927') -440px -12px no-repeat;
+  background: url('/images/obstacles/sprite.png?1319259254') -440px -12px no-repeat;
 }
 #obstacles li.down-the-hatch a {
-  background: url('/images/obstacles/sprite.png?1319242927') -660px -12px no-repeat;
+  background: url('/images/obstacles/sprite.png?1319259254') -660px -12px no-repeat;
 }
 #obstacles li.pick-it a {
-  background: url('/images/obstacles/sprite.png?1319242927') -880px -12px no-repeat;
+  background: url('/images/obstacles/sprite.png?1319259254') -880px -12px no-repeat;
 }
 #obstacles li.the-wringer a {
-  background: url('/images/obstacles/sprite.png?1319242927') -1100px -12px no-repeat;
+  background: url('/images/obstacles/sprite.png?1319259254') -1100px -12px no-repeat;
 }
 #obstacles li:hover, #obstacles li.selected {
-  background: #e9f82e url('/images/textures/gray.png?1319237789');
+  background: #e9f82e url('/images/textures/gray.png?1319259254');
 }
 #obstacles li:hover a, #obstacles li.selected a {
   color: #ff5822;
@@ -330,7 +330,7 @@ body > nav.scrolling {
   margin-bottom: 20px;
   padding-top: 55px;
   text-align: center;
-  background: url('/images/slime/medium.png?1319240408') center 0 no-repeat;
+  background: url('/images/slime/medium.png?1319259254') center 0 no-repeat;
 }
 #obstacle h1, #obstacle h2 {
   -moz-transform: rotate(-7.5deg);
@@ -365,7 +365,7 @@ body > nav.scrolling {
 }
 
 #prizes {
-  background: #6db933 url('/images/textures/gray.png?1319237789');
+  background: #6db933 url('/images/textures/gray.png?1319259254');
   border-top: 8px solid rgba(0, 0, 0, 0.1);
   border-bottom: 8px solid rgba(0, 0, 0, 0.1);
 }
@@ -378,7 +378,7 @@ body > nav.scrolling {
 }
 #prizes header.section h1 {
   width: 180px;
-  background: #6db933 url('/images/textures/gray.png?1319237789');
+  background: #6db933 url('/images/textures/gray.png?1319259254');
 }
 #prizes img {
   margin: 0 auto 20px;
@@ -412,7 +412,7 @@ body > nav.scrolling {
 }
 
 #register {
-  background: url('/images/textures/gray.png?1319237789');
+  background: url('/images/textures/gray.png?1319259254');
   border-top: 8px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 150px;
 }
@@ -423,7 +423,7 @@ body > nav.scrolling {
 }
 #register header.section h1 {
   width: 420px;
-  background: #6ec2d8 url('/images/textures/gray.png?1319237789');
+  background: #6ec2d8 url('/images/textures/gray.png?1319259254');
 }
 #register form {
   width: 380px;
@@ -459,7 +459,7 @@ body > nav.scrolling {
   font-size: 140px;
   color: #f3f200;
   text-shadow: black 7px 11px 0;
-  background: url('/images/register/timer.png?1319238517');
+  background: url('/images/register/timer.png?1319259254');
 }
 #register aside span {
   display: block;
@@ -481,5 +481,5 @@ section > .container {
 }
 section > .container > header.section {
   margin-bottom: 55px;
-  background: url('/images/patterns/checkers.png?1319231807');
+  background: url('/images/patterns/checkers.png?1319259254');
 }
