@@ -1,8 +1,8 @@
 #register
   +texture-blue(false)
-  border-top: 8px solid rgba(0, 0, 0, .1)
+  border-top: 7px solid rgba(0, 0, 0, .1)
   padding-bottom: 150px
-  
+
   .container
     +clearfix
     padding: 50px 0 60px
@@ -14,7 +14,36 @@
   form
     +column(5)
     float: left
-
+    padding-top: 20px
+    label
+      display: block
+      position: relative
+      left: 15px
+      top: 50px
+      margin-top: -32px
+      float: left
+      font-size: 15px
+      letter-spacing: 1px
+      z-index: 2
+      &.focus
+        +opacity(.3)
+      &.unnecessary
+        +opacity(0)
+    input
+      width: 352px
+      height: 50px
+      margin-bottom: 15px
+      padding: 0 14px
+      color: $txt_white
+      +komika-title
+      font-size: 15px
+      letter-spacing: 1px
+      +texture-orange
+      +border-radius(6px)
+      border: 0
+      outline: 0
+      &:focus
+        +single-box-shadow(rgba(15, 40, 48, 1), 0, 0, 6px, 0, inset)
   aside
     +column(6, true)
     float: right
