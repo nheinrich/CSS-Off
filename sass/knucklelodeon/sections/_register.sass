@@ -1,7 +1,7 @@
 #register
   +texture-blue(false)
   border-top: 7px solid rgba(0, 0, 0, .1)
-  padding-bottom: 150px
+  padding-bottom: 130px
 
   .container
     +clearfix
@@ -12,9 +12,13 @@
     +texture-blue
 
   form
-    +column(5)
+    position: relative
     float: left
+    left: 4px
+    +column(5)    
     padding-top: 20px
+    font-size: 15px
+    letter-spacing: 1px
     label
       display: block
       position: relative
@@ -22,9 +26,6 @@
       top: 50px
       margin-top: -32px
       float: left
-      font-size: 15px
-      letter-spacing: 1px
-      z-index: 2
       &.focus
         +opacity(.3)
       &.unnecessary
@@ -44,24 +45,97 @@
       outline: 0
       &:focus
         +single-box-shadow(rgba(15, 40, 48, 1), 0, 0, 6px, 0, inset)
+    fieldset
+      position: relative
+      height: 50px
+      margin-bottom: 15px
+    select, ol
+      float: left
+    select
+      margin-top: 15px
+    ol
+      position: absolute
+      +texture-orange
+      +border-radius(6px)
+      z-index: 2      
+      li
+        display: none
+        height: 50px
+        cursor: pointer
+        &.selected
+          display: block
+          background: image-url("register/select-arrow.png") right bottom no-repeat        
+      a
+        padding-left: 15px
+        line-height: 50px
+    ol.expanded
+      +single-box-shadow(rgba(15, 40, 48, 1), 0, 0, 6px, 0)    
+      li
+        display: block
+        border-top: 1px solid rgba(255, 255, 255, .25)
+        border-bottom: 1px solid rgba(0, 0, 0, .25)
+        &.selected
+          +texture-green
+        &:first-child, &:hover:first-child
+          border-top: 0
+          background: image-url("register/select-arrow.png") right top no-repeat
+        &:last-child
+          border-bottom: 0
+          +border-bottom-radius(6px)
+        &:hover
+          +texture-green      
+    #color, .color
+      left: 0
+      width: 220px
+      margin-right: 15px
+    #gender, .gender
+      right: 0
+      width: 145px
+      
   aside
     +column(6, true)
     float: right
-    padding-top: 20px
+    padding-top: 10px
     text-align: center
     #timer
       width: 386px
       height: 329px
       +box-sizing(border-box)
-      margin: 0 auto 25px
+      margin: 0 auto 52px
       padding: 89px 0 0 5px
       +digital-dream
       background: image_url("register/timer.png")
     span
       display: block
-      width: 360px
+      width: 400px
       margin: 0 auto
       text-align: center
       font-size: 39px
       line-height: 50px
       +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)
+      span
+        padding-top: 7px
+        color: #bce1ec
+        font-size: 34px
+        &.small
+          font-size: 30px
+          
+  form > button
+    width: 100%
+    height: 155px
+    margin-top: 20px
+    background: image-url("slime/small.png") center center no-repeat
+    border: 0
+    cursor: pointer
+    span
+      display: block
+      color: $txt_white
+      +komika-title
+      font-size: 25px
+      letter-spacing: 1px
+      +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)      
+      +rotate(-7.5deg)
+      +single-transition(all, .1s)
+    &:hover
+      span
+        font-size: 30px

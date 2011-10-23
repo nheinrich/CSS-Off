@@ -107,18 +107,33 @@
       </header>
       <form>
         <label for="name">Your Name</label>
-        <input type="text" id="name" />
+        <input type="text" name="name" id="name" />
         <label for="email">Email Address</label>
-        <input type="text" id="email" />
+        <input type="email" name="email" id="email" />
         <label for="team">Team Name</label>
-        <input type="text" id="team" />
-        <label for="color">Team Color</label>
-        <input type="text" id="color" />
-        <label for="gender">Gender</label>
-        <input type="text" id="gender" />
+        <input type="text" name="team" id="team" />
+
+        <fieldset>
+          <!-- these are turned into lists in the JS for design control -->
+          <!-- the JS still populates these element for form support -->
+          <select name="color" id="color">
+            <option value="">Team Color</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+          </select>        
+          <select name="gender" id="gender">
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </fieldset>
         <label for="photo">Photo</label>
-        <input type="text" id="photo" />
-        <button>Submit Entry!</button>
+        <input type="url" name="photo" id="photo" />
+        <button>
+          <span>Submit Entry!</span>
+        </button>
       </form>
       <aside>
         <div id="timer">60</div>
