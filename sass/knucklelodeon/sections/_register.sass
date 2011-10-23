@@ -1,7 +1,7 @@
 #register
   +texture-blue(false)
+  height: 850px
   border-top: 7px solid rgba(0, 0, 0, .1)
-  padding-bottom: 130px
 
   .container
     +clearfix
@@ -139,3 +139,22 @@
     &:hover
       span
         font-size: 30px
+        
+  .success
+    display: none
+    float: left
+    height: 220px
+    margin: 60px 0 0 45px    
+    padding-top: 60px
+    text-align: center
+    background: image_url("slime/medium-on-blue.png") center 0 no-repeat
+    h2, h3
+      +rotate(-7.5deg)
+    h2
+      font-size: 39px
+      line-height: 48px
+      margin-bottom: 16px
+      +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)
+    h3
+      font-size: 21px
+      +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)

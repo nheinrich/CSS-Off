@@ -98,10 +98,19 @@ k.registration_form.initializers = {
   $: k.registration_form.$,
 
   form: function(){
-    // snags form submission and displays values to verify functionality
+    // handles form submission fading out, timer stoppage and data display
     this.$.form.submit(function(e){
       e.preventDefault();
-      alert("Serialized Form Field Data: \n \n" + $(this).serialize());
+      k.timer.stop();
+      $(this).fadeOut(function(){
+        $(".success").fadeIn()
+      });
+      
+      // displays form field values to verify functionality
+      var serialized_form = $(this).serialize()
+      setTimeout(function(){
+        alert("Serialized Form Field Data: \n \n" + serialized_form);
+      }, 2000);      
     });
   },
 
@@ -230,10 +239,7 @@ k.timer.init = function(){
 
 // counts down the timer, stores the current number
 k.timer.countdown = function(stop){
-  if (this.stopped === true) {
-    var markup = "Winner!<br/><span class='small'>With time to spare!</span>";
-    $("#register aside span").html(markup);    
-  } else {
+  if (this.stopped !== true) {
     var num = this.current_number;
     if (num > 0) {
       if (num.toString().length === 1) {
@@ -249,3 +255,10 @@ k.timer.countdown = function(stop){
     }    
   }
 };
+
+// stops the timer if the form is filled out before the time expires
+k.timer.stop = function(){
+  this.stopped = true
+  var markup = "Winner!<br/><span class='small'>With time to spare!</span>";
+  $("#register aside span").html(markup);    
+}
