@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
-<html>
+<!--[if lt IE 7]> <html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7]> <html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en-us" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Knucklelodeon - Triple Dare is the web's messiest challenge. Sign up today to become a contestant. Airs Thursdays on the Knucklelodon Network™">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Knucklelodeon | Triple Dare</title>
   <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
   <link href="stylesheets/knucklelodeon.css" media="screen" rel="stylesheet" type="text/css" />
@@ -13,14 +16,16 @@
   <!--[if lt IE 9]>
     <link href="stylesheets/knucklelodeon/browsers/ie.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="javascripts/html5.js" type="text/javascript"></script>
-    <script src="javascripts/selectivizr.min.js" type="text/javascript"></script>
-  <![endif]-->  
+  <![endif]-->
 </head>
 
 <body>
   <nav>
-    <!-- on one line due to inline-block spacing -->
-    <ul><li><a href="#obstacles">Obstacles</a></li><li><a href="#prizes">Prizes</a></li><li><a href="#register">Be a Contestant</a></li><li><a href="#">Back to Top</a></li></ul>
+    
+    <ul>
+      <!-- on one line due to inline-block spacing -->
+      <li><a href="#obstacles">Obstacles</a></li><li><a href="#prizes">Prizes</a></li><li><a href="#register">Be a Contestant</a></li><li class="last"><a href="#">Back to Top</a></li>
+    </ul>
   </nav>
 
   <section id="intro">
@@ -86,19 +91,19 @@
         <h1 class="section">Prizes</h1>
       </header>
       <ul>
-        <li>
+        <li class="space-camp">
           <img src="images/prizes/space-camp.png" alt="Space Camp" />
           <h2>A trip to Space Camp!</h2>
         </li>
-        <li>
+        <li class="skateboard">
           <img src="images/prizes/skateboard.png" alt="Nash Skateboard" />
           <h2>A Nash Skateboard!</h2>
         </li>
-        <li>
+        <li class="keyboard">
           <img src="images/prizes/keyboard.png" alt="Casio Kapman Keyboard" />
           <h2>A Casio Kapman Keyboard!</h2>
         </li>
-        <li>
+        <li class="tv-vcr">
           <img src="images/prizes/tv-vcr.png" alt="TV/VCR Combo" />
           <h2>A 13 Inch TV/VCR Combo!</h2>
         </li>
@@ -109,7 +114,7 @@
   <section id="register">
     <div class="container">
       <header class="section">
-        <h1 class="section">Be a Contestant</h1>
+        <h1>Be a Contestant</h1>
       </header>
       <form>
         <label for="name">Your Name</label>
@@ -156,7 +161,7 @@
     <div class="container">
       <h1>The Knucklelodeon Network</h1>
       <div class="disclaimer">
-        <p>
+        <p class="first">
           The Knucklelodeon Network is not affiliated<br/>
           with Nickelodeon, nor is it an actual<br/>
           television network
@@ -169,7 +174,7 @@
       </div>
       <h2>Visit Our Studios</h2>
       <div class="studios">
-        <address>
+        <address class="first">
           11 Slime Time Way<br/>
           Sacramento, CA 94203
         </address>
@@ -189,5 +194,6 @@
   </section>
 
   <script src="javascripts/knucklelodeon.js"></script>
+  
 </body>
 </html>
