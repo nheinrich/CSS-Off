@@ -153,7 +153,9 @@ k.registration_form.initializers = {
           .html($option.html());
         var $li = $("<li></li>");
         if (i === 0) {
-          $li.addClass("selected");
+          $li.addClass("first selected");
+        } else if (i === $options.length-1) {
+          $li.addClass("last");
         }
         $li.append($a);
         $ol.append($li);

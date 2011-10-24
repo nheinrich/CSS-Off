@@ -74,11 +74,15 @@
         display: block
         border-top: 1px solid rgba(255, 255, 255, .25)
         border-bottom: 1px solid rgba(0, 0, 0, .25)
+        /* selectivizr: */
+        /* a served site can use selectivizr to support pseudo selectors IE <9 */        
         &.selected
-          +texture-green
-        &:first-child, &:hover:first-child
+          +texture-green          
+        &:first-child, &:first-child:hover
+        &.first, &.first:hover
           border-top: 0
           background: image-url("register/select-arrow.png") right top no-repeat
+        &.last
         &:last-child
           border-bottom: 0
           +border-bottom-radius(6px)

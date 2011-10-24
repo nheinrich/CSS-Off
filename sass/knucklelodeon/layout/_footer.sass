@@ -21,7 +21,9 @@
         font-size: 14px
         line-height: 18px
         letter-spacing: 0
-        &:first-child
+        /* selectivizr: */
+        /* a served site can use selectivizr to support pseudo selectors IE <9 */        
+        &:first-child, &.first
           float: left
           text-align: right    
   .license

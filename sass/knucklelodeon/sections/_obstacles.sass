@@ -35,8 +35,15 @@
       letter-spacing: 1px
       color: rgba(255, 255, 255, 1)
       +single-transition(color, .4s)
-    &:nth-child(even)
+  
+    /* selectivizr: */
+    /* a served site can use selectivizr to support pseudo selectors IE <9 */
+    &:nth-child(even),
+    &.sundae-slide,
+    &.down-the-hatch,
+    &.the-wringer
       margin-right: 0
+      
     &.the-tank a
       background: image_url("obstacles/sprite.png") 0 -12px no-repeat
     &.sundae-slide a
@@ -88,4 +95,3 @@
     right: 60px
   &.down-the-hatch img
     right: 30px
-

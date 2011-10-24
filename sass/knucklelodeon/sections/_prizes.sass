@@ -24,15 +24,18 @@
     margin: 0 20px 100px 20px
     text-align: center
     letter-spacing: 0
-    &:nth-child(odd)
+    /* items on left */
+    &.space-camp, &.keyboard
       clear: left
-    &:nth-child(even)
+    /* items on right */
+    &.skateboard, &.tv-vcr
       float: right
       margin-left: 0
-    &:nth-child(2)
-      img
-        margin-bottom: 15px
-    &:nth-child(n+2)
+    /* items on bottom */
+    &.keyboard, &.tv-vcr
       margin-bottom: 22px
-    &:last-child
+    /* special positioning */
+    &.skateboard img
+      margin-bottom: 15px
+    &.tv-vcr
       margin-top: -195px

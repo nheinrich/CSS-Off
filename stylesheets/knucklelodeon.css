@@ -71,9 +71,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @font-face {
-  font-family: "OpenSans-Semibold";
-  src: url("../fonts/open-sans-semibold/opensans-semibold.eot");
-  src: url("../fonts/open-sans-semibold/opensans-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-semibold/opensans-semibold.woff") format("woff"), url("../fonts/open-sans-semibold/opensans-semibold.ttf") format("truetype"), url("../fonts/open-sans-semibold/opensans-semibold.svg#opensans-semibold") format("svg");
+  font-family: "OpenSans";
+  src: url("../fonts/open-sans-regular/opensans-regular.eot");
+  src: url("../fonts/open-sans-regular/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-regular/opensans-regular.woff") format("woff"), url("../fonts/open-sans-regular/opensans-regular.ttf") format("truetype"), url("../fonts/open-sans-regular/opensans-regular.svg#opensans-regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -132,15 +132,17 @@ body > nav li {
   vertical-align: middle;
   *vertical-align: auto;
   margin-right: 50px;
+  /* selectivizr: */
+  /* a served site can use selectivizr to support pseudo selectors IE <9 */
 }
 body > nav li {
   *display: inline;
 }
-body > nav li:last-child {
+body > nav li:last-child, body > nav li .last {
   margin-right: 0;
 }
 body > nav a {
-  font-family: "OpenSans-Semibold", "Arial", "Sans-serif";
+  font-family: "OpenSans", "Arial", "Sans-serif";
   text-transform: uppercase;
   font-size: 17px;
   letter-spacing: 1px;
@@ -162,7 +164,7 @@ body > nav.scrolling {
 }
 
 #footer {
-  font-family: "OpenSans-Semibold", "Arial", "Sans-serif";
+  font-family: "OpenSans", "Arial", "Sans-serif";
   background: url('../images/textures/gray.png?1319262776');
   letter-spacing: 1px;
 }
@@ -196,8 +198,10 @@ body > nav.scrolling {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
+  /* selectivizr: */
+  /* a served site can use selectivizr to support pseudo selectors IE <9 */
 }
-#footer .container > div p:first-child, #footer .container > div address:first-child {
+#footer .container > div p:first-child, #footer .container > div p.first, #footer .container > div address:first-child, #footer .container > div address.first {
   float: left;
   text-align: right;
 }
@@ -243,7 +247,7 @@ body > nav.scrolling {
   margin-bottom: 19px;
 }
 #intro h3 {
-  font-family: "OpenSans-Semibold", "Arial", "Sans-serif";
+  font-family: "OpenSans", "Arial", "Sans-serif";
   font-size: 21px;
   letter-spacing: 1px;
 }
@@ -287,6 +291,8 @@ body > nav.scrolling {
   -webkit-transition-duration: 0.4s;
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
+  /* selectivizr: */
+  /* a served site can use selectivizr to support pseudo selectors IE <9 */
 }
 #obstacles li a {
   display: block;
@@ -310,7 +316,7 @@ body > nav.scrolling {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-#obstacles li:nth-child(even) {
+#obstacles li:nth-child(even), #obstacles li.sundae-slide, #obstacles li.down-the-hatch, #obstacles li.the-wringer {
   margin-right: 0;
 }
 #obstacles li.the-tank a {
@@ -417,21 +423,25 @@ body > nav.scrolling {
   margin: 0 20px 100px 20px;
   text-align: center;
   letter-spacing: 0;
+  /* items on left */
+  /* items on right */
+  /* items on bottom */
+  /* special positioning */
 }
-#prizes li:nth-child(odd) {
+#prizes li.space-camp, #prizes li.keyboard {
   clear: left;
 }
-#prizes li:nth-child(even) {
+#prizes li.skateboard, #prizes li.tv-vcr {
   float: right;
   margin-left: 0;
 }
-#prizes li:nth-child(2) img {
-  margin-bottom: 15px;
-}
-#prizes li:nth-child(n+2) {
+#prizes li.keyboard, #prizes li.tv-vcr {
   margin-bottom: 22px;
 }
-#prizes li:last-child {
+#prizes li.skateboard img {
+  margin-bottom: 15px;
+}
+#prizes li.tv-vcr {
   margin-top: -195px;
 }
 
@@ -550,11 +560,13 @@ body > nav.scrolling {
   display: block;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  /* selectivizr: */
+  /* a served site can use selectivizr to support pseudo selectors IE <9 */
 }
 #register form ol.expanded li.selected {
   background: #6db933 url('../images/textures/gray.png?1319262776');
 }
-#register form ol.expanded li:first-child, #register form ol.expanded li:hover:first-child {
+#register form ol.expanded li.first, #register form ol.expanded li.first:hover {
   border-top: 0;
   background: url('../images/register/select-arrow.png?1319328355') right top no-repeat;
 }
