@@ -79,7 +79,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background: #6ec2d8 url('/images/slime/bg_overlay.png?1319259254') 83% -200px no-repeat;
+  background: #6ec2d8 url('../images/slime/bg_overlay.png?1319259254') 83% -200px no-repeat;
 }
 
 body {
@@ -163,7 +163,7 @@ body > nav.scrolling {
 
 #footer {
   font-family: "OpenSans-Semibold", "Arial", "Sans-serif";
-  background: url('/images/textures/gray.png?1319262776');
+  background: url('../images/textures/gray.png?1319262776');
   letter-spacing: 1px;
 }
 #footer .container {
@@ -177,7 +177,7 @@ body > nav.scrolling {
 #footer .container h1 {
   margin-top: -45px;
   padding-top: 105px;
-  background: url('/images/logos/knucklelodeon.png?1319259254') top center no-repeat;
+  background: url('../images/logos/knucklelodeon.png?1319259254') top center no-repeat;
 }
 #footer .container > div {
   overflow: hidden;
@@ -216,7 +216,7 @@ body > nav.scrolling {
 
 #intro {
   padding: 69px 0 85px;
-  background: url('/images/textures/gray.png?1319262776');
+  background: url('../images/textures/gray.png?1319262776');
   background-position: -60px 0;
 }
 #intro h1 {
@@ -228,7 +228,7 @@ body > nav.scrolling {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/logos/triple-dare.png?1319259254');
+  background-image: url('../images/logos/triple-dare.png?1319259254');
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -249,7 +249,7 @@ body > nav.scrolling {
 }
 
 #obstacles {
-  background: #ff5924 url('/images/textures/gray.png?1319262776');
+  background: #ff5924 url('../images/textures/gray.png?1319262776');
   border-top: 7px solid rgba(0, 0, 0, 0.1);
   border-bottom: 7px solid rgba(0, 0, 0, 0.1);
 }
@@ -260,7 +260,7 @@ body > nav.scrolling {
 }
 #obstacles header.section h1 {
   width: 280px;
-  background: #ff5924 url('/images/textures/gray.png?1319262776');
+  background: #ff5924 url('../images/textures/gray.png?1319262776');
 }
 #obstacles ul {
   width: 460px;
@@ -272,7 +272,7 @@ body > nav.scrolling {
   width: 220px;
   height: 220px;
   margin: 0 20px 20px 0;
-  background: #6db933 url('/images/textures/gray.png?1319262776');
+  background: #6db933 url('../images/textures/gray.png?1319262776');
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -314,25 +314,25 @@ body > nav.scrolling {
   margin-right: 0;
 }
 #obstacles li.the-tank a {
-  background: url('/images/obstacles/sprite.png?1319259254') 0 -12px no-repeat;
+  background: url('../images/obstacles/sprite.png?1319259254') 0 -12px no-repeat;
 }
 #obstacles li.sundae-slide a {
-  background: url('/images/obstacles/sprite.png?1319259254') -220px -12px no-repeat;
+  background: url('../images/obstacles/sprite.png?1319259254') -220px -12px no-repeat;
 }
 #obstacles li.human-hamster-wheel a {
-  background: url('/images/obstacles/sprite.png?1319259254') -440px -12px no-repeat;
+  background: url('../images/obstacles/sprite.png?1319259254') -440px -12px no-repeat;
 }
 #obstacles li.down-the-hatch a {
-  background: url('/images/obstacles/sprite.png?1319259254') -660px -12px no-repeat;
+  background: url('../images/obstacles/sprite.png?1319259254') -660px -12px no-repeat;
 }
 #obstacles li.pick-it a {
-  background: url('/images/obstacles/sprite.png?1319259254') -880px -12px no-repeat;
+  background: url('../images/obstacles/sprite.png?1319259254') -880px -12px no-repeat;
 }
 #obstacles li.the-wringer a {
-  background: url('/images/obstacles/sprite.png?1319259254') -1100px -12px no-repeat;
+  background: url('../images/obstacles/sprite.png?1319259254') -1100px -12px no-repeat;
 }
 #obstacles li:hover, #obstacles li.selected {
-  background: #e9f82e url('/images/textures/gray.png?1319262776');
+  background: #e9f82e url('../images/textures/gray.png?1319262776');
 }
 #obstacles li:hover a, #obstacles li.selected a {
   color: #ff5822;
@@ -354,7 +354,7 @@ body > nav.scrolling {
   margin-bottom: 20px;
   padding-top: 55px;
   text-align: center;
-  background: url('/images/slime/medium-on-orange.png?1319259254') center 0 no-repeat;
+  background: url('../images/slime/medium-on-orange.png?1319259254') center 0 no-repeat;
 }
 #obstacle h1, #obstacle h2 {
   -moz-transform: rotate(-7.5deg);
@@ -389,7 +389,7 @@ body > nav.scrolling {
 }
 
 #prizes {
-  background: #6db933 url('/images/textures/gray.png?1319262776');
+  background: #6db933 url('../images/textures/gray.png?1319262776');
   border-top: 7px solid rgba(0, 0, 0, 0.1);
   border-bottom: 7px solid rgba(0, 0, 0, 0.1);
 }
@@ -402,7 +402,7 @@ body > nav.scrolling {
 }
 #prizes header.section h1 {
   width: 180px;
-  background: #6db933 url('/images/textures/gray.png?1319262776');
+  background: #6db933 url('../images/textures/gray.png?1319262776');
 }
 #prizes img {
   margin: 0 auto 20px;
@@ -436,7 +436,7 @@ body > nav.scrolling {
 }
 
 #register {
-  background: url('/images/textures/gray.png?1319262776');
+  background: url('../images/textures/gray.png?1319262776');
   height: 850px;
   border-top: 7px solid rgba(0, 0, 0, 0.1);
 }
@@ -447,7 +447,7 @@ body > nav.scrolling {
 }
 #register header.section h1 {
   width: 420px;
-  background: #6ec2d8 url('/images/textures/gray.png?1319262776');
+  background: #6ec2d8 url('../images/textures/gray.png?1319262776');
 }
 #register form {
   position: relative;
@@ -489,7 +489,7 @@ body > nav.scrolling {
   letter-spacing: 0.15em;
   font-size: 15px;
   letter-spacing: 1px;
-  background: #ff5924 url('/images/textures/gray.png?1319262776');
+  background: #ff5924 url('../images/textures/gray.png?1319262776');
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -518,7 +518,7 @@ body > nav.scrolling {
 }
 #register form ol {
   position: absolute;
-  background: #ff5924 url('/images/textures/gray.png?1319262776');
+  background: #ff5924 url('../images/textures/gray.png?1319262776');
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   -o-border-radius: 6px;
@@ -534,7 +534,7 @@ body > nav.scrolling {
 }
 #register form ol li.selected {
   display: block;
-  background: url('/images/register/select-arrow.png?1319328355') right bottom no-repeat;
+  background: url('../images/register/select-arrow.png?1319328355') right bottom no-repeat;
 }
 #register form ol a {
   padding-left: 15px;
@@ -552,11 +552,11 @@ body > nav.scrolling {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 #register form ol.expanded li.selected {
-  background: #6db933 url('/images/textures/gray.png?1319262776');
+  background: #6db933 url('../images/textures/gray.png?1319262776');
 }
 #register form ol.expanded li:first-child, #register form ol.expanded li:hover:first-child {
   border-top: 0;
-  background: url('/images/register/select-arrow.png?1319328355') right top no-repeat;
+  background: url('../images/register/select-arrow.png?1319328355') right top no-repeat;
 }
 #register form ol.expanded li:last-child {
   border-bottom: 0;
@@ -574,7 +574,7 @@ body > nav.scrolling {
   border-bottom-right-radius: 6px;
 }
 #register form ol.expanded li:hover {
-  background: #6db933 url('/images/textures/gray.png?1319262776');
+  background: #6db933 url('../images/textures/gray.png?1319262776');
 }
 #register form #color, #register form .color {
   left: 0;
@@ -585,55 +585,11 @@ body > nav.scrolling {
   right: 0;
   width: 145px;
 }
-#register aside {
-  width: 460px;
-  margin-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-right: 0;
-  float: right;
-  padding-top: 10px;
-  text-align: center;
-}
-#register aside #timer {
-  width: 386px;
-  height: 329px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0 auto 52px;
-  padding: 89px 0 0 5px;
-  font-family: "DigitaldreamFat", "Arial", "Sans-serif";
-  font-size: 140px;
-  color: #f3f200;
-  text-shadow: black 7px 11px 0;
-  background: url('/images/register/timer.png?1319259254');
-}
-#register aside span {
-  display: block;
-  width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  font-size: 39px;
-  line-height: 50px;
-  text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
-}
-#register aside span span {
-  padding-top: 7px;
-  color: #bce1ec;
-  font-size: 34px;
-}
-#register aside span span.small {
-  font-size: 30px;
-}
 #register form > button {
   width: 100%;
   height: 155px;
   margin-top: 20px;
-  background: url('/images/slime/small.png?1319338623') center center no-repeat;
+  background: url('../images/slime/small.png?1319338623') center center no-repeat;
   border: 0;
   cursor: pointer;
 }
@@ -669,7 +625,7 @@ body > nav.scrolling {
   margin: 60px 0 0 45px;
   padding-top: 60px;
   text-align: center;
-  background: url('/images/slime/medium-on-blue.png?1319340781') center 0 no-repeat;
+  background: url('../images/slime/medium-on-blue.png?1319340781') center 0 no-repeat;
 }
 #register .success h2, #register .success h3 {
   -moz-transform: rotate(-7.5deg);
@@ -688,6 +644,50 @@ body > nav.scrolling {
   font-size: 21px;
   text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
+#register aside {
+  width: 460px;
+  margin-right: 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: 0;
+  float: right;
+  padding-top: 10px;
+  text-align: center;
+}
+#register aside #timer {
+  width: 386px;
+  height: 329px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto 52px;
+  padding: 89px 0 0 5px;
+  font-family: "DigitaldreamFat", "Arial", "Sans-serif";
+  font-size: 140px;
+  color: #f3f200;
+  text-shadow: black 7px 11px 0;
+  background: url('../images/register/timer.png?1319259254');
+}
+#register aside span {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 39px;
+  line-height: 50px;
+  text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
+}
+#register aside span span {
+  padding-top: 7px;
+  color: #bce1ec;
+  font-size: 34px;
+}
+#register aside span span.small {
+  font-size: 30px;
+}
 
 section > .container {
   width: 940px;
@@ -699,5 +699,5 @@ section > .container {
 }
 section > .container > header.section {
   margin-bottom: 55px;
-  background: url('/images/patterns/checkers.png?1319259254');
+  background: url('../images/patterns/checkers.png?1319259254');
 }

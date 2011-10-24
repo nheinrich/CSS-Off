@@ -8,12 +8,18 @@
   <title>Knucklelodeon | Triple Dare</title>
   <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
   <link href="stylesheets/knucklelodeon.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="javascripts/jquery-1.6.4.min.js" type="text/javascript"></script>
+  
+  <!--[if lt IE 9]>
+    <link href="stylesheets/knucklelodeon/browsers/ie.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/html5.js" type="text/javascript"></script>
+    <script src="javascripts/selectivizr.min.js" type="text/javascript"></script>
+  <![endif]-->  
 </head>
 
 <body>
-
   <nav>
-    <!-- inline due to inline-block spacing -->
+    <!-- on one line due to inline-block spacing -->
     <ul><li><a href="#obstacles">Obstacles</a></li><li><a href="#prizes">Prizes</a></li><li><a href="#register">Be a Contestant</a></li><li><a href="#">Back to Top</a></li></ul>
   </nav>
 
@@ -114,8 +120,8 @@
         <input type="text" name="team" id="team" />
 
         <fieldset>
-          <!-- these are turned into lists in the JS for design control -->
-          <!-- the JS still populates these element for form support -->
+          <!-- selects are turned into lists in the JS (for design) -->
+          <!-- the JS still populates these elements for form support -->
           <select name="color" id="color">
             <option value="">Team Color</option>
             <option value="blue">Blue</option>
@@ -182,7 +188,6 @@
     </div>
   </section>
 
-  <script src="javascripts/jquery-1.6.4.min.js"></script>
   <script src="javascripts/knucklelodeon.js"></script>
 </body>
 </html>

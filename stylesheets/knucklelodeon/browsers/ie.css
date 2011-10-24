@@ -1,0 +1,45 @@
+.pie-element, #obstacles li {
+  behavior: url("/stylesheets/knucklelodeon/browsers/PIE.htc");
+  position: relative;
+}
+
+.pie-container, .widget {
+  z-index: 0;
+  position: relative;
+}
+
+.z-pie-element, .widget h3 {
+  behavior: url("/stylesheets/knucklelodeon/browsers/PIE.htc");
+  z-index: 0;
+}
+
+header.section h1 {
+  font-family: "KomikaTitle-Paint", "Arial Black", "Arial", "Sans-serif";
+  letter-spacing: 2px;
+}
+
+body > nav {
+  line-height: 18px;
+  background: #69bacf;
+}
+body > nav.scrolling {
+  background: #29505b;
+}
+
+#intro h2 {
+  font-family: "KomikaTitle-Paint", "Arial Black", "Arial", "Sans-serif";
+  letter-spacing: 2px;
+}
+
+#obstacles ul {
+  width: 480px;
+}
+
+#register aside #timer {
+  padding-top: 93px;
+  padding-left: 10px;
+  font-family: "DigitaldreamFat", "Arial", "Sans-serif";
+  font-size: 140px;
+  color: #f3f200;
+  letter-spacing: 0;
+}

@@ -1,0 +1,70 @@
+// note: each element that has PIE enabled on it will add about 10ms to your page load.
+@import compass/css3/pie
+@import compass/css3
+@import ../base/colors
+@import _pie.sass
+
+
+// IE specific styles (legacy) -----------------------------------------------
+
+// fonts ---------------------------------------------------------------------
+
+= digital-dream
+  font-family: "DigitaldreamFat", "Arial", "Sans-serif"
+  font-size: 140px
+  color: $txt_yellow
+  letter-spacing: 0
+
+
+= komika-title
+  font-family: "KomikaTitle-Paint", "Arial Black", "Arial", "Sans-serif"
+  letter-spacing: 2px
+
+// background ----------------------------------------------------------------
+
+body
+
+
+// typography ----------------------------------------------------------------
+
+header.section h1
+  +komika-title
+
+
+// navigation ----------------------------------------------------------------
+
+body > nav
+  line-height: 18px
+  background: #69bacf
+  &.scrolling
+    background: #29505b
+
+
+// intro ---------------------------------------------------------------------
+
+#intro
+  h2
+    +komika-title
+
+
+// obstacles -----------------------------------------------------------------
+
+#obstacles
+  ul
+    width: 480px
+  li
+    +pie
+    
+// prizes --------------------------------------------------------------------
+
+
+// register ------------------------------------------------------------------
+
+#register
+  aside
+    #timer
+      padding-top: 93px
+      padding-left: 10px
+      +digital-dream
+
+

@@ -200,9 +200,8 @@ k.registration_form.track_clicks = function(){
 k.scroll = {};
 
 k.scroll.init = function(){
-  $(document).scroll(function(){
+  $(window).scroll(function(){
     var scroll_top = $(this).scrollTop();
-
     // nav
     if (scroll_top > 0) {
       $("body > nav").addClass("scrolling");

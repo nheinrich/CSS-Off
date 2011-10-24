@@ -1,0 +1,39 @@
+$legacy-support-for-ie6: true
+$legacy-support-for-ie7: true
+$legacy-support-for-ie8: true
+
+// this file must be delivered with a mime-type of:
+// text/x-component
+$pie-behavior: url("/stylesheets/knucklelodeon/browsers/PIE.htc")
+
+// extends the class below for use with the "+pie" mixin
+$pie-base-class: pie-element
+
+// different classes to extend for use ---------------------------------------
+
+.pie-element
+  +pie-element(relative)
+
+// But sometimes this messes up your positioning
+// So you can also use z-indexing. In this case
+// an ancestor element before or having the first
+// opaque background should be marked as a pie-container
+// which gives it a z-index of 0 (actually any z-index
+// can be provided to the pie-container mixin).
+// And then the pie element itself should be given
+// a z-index of -1.
+.pie-container
+  +pie-container
+
+.z-pie-element
+  // this will get a z-index of 0, you can pass a z-index value if you want
+  +pie-element(z-index)
+
+// This is just a simple example of how to use the z-index approach.
+.widget
+  @extend .pie-container
+  h3
+    +pie(z-pie-element)
+    // This will extend .z-pie-element instead of .pie-element
+
+
