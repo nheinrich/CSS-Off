@@ -1,0 +1,38 @@
+/* footer ----------------------------------------------------------------- */
+
+#footer
+  +open-sans
+  +texture-blue(false)
+  letter-spacing: 1px
+  .container
+    border-top: 7px solid rgba(0, 0, 0, .075)
+    h1, h2
+      text-align: center
+      font-size: 19px
+      margin-bottom: 10px
+    h1
+      margin-top: -45px
+      padding-top: 105px
+      background: image_url("logos/knucklelodeon.png") top center no-repeat
+    > div
+      +clearfix
+      margin-bottom: 33px
+      p, address
+        float: right
+        +column(6, true)
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 0
+        &:first-child, &.first
+          float: left
+          text-align: right    
+  .license
+    border-top: 7px solid rgba(0, 0, 0, .075)
+    padding-top: 25px
+    text-align: center
+    font-size: 14px
+    letter-spacing: 0
+    margin-bottom: 0 !important
+    img
+      display: block
+      margin: 25px auto
