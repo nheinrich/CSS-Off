@@ -1,12 +1,16 @@
+/* reset ------------------------------------------------------------------ */
+
 @import compass/reset
 @import compass/css3
 @import compass/utilities/general/clearfix
 @import compass/utilities/text/replacement
 
+// mixins --------------------------------------------------------------------
+
 = texture($color)
   background: eval("$bg_#{$color}") image_url("textures/#{$color}.png")
   
-// using these until the above is working
+// using individual mixins until the above is working
 
 // = texture-blue($include_bg_color:true)
 //   @if $include_bg_color
@@ -24,7 +28,7 @@
 //   background: $bg_yellow image_url("textures/yellow.png")
   
   
-// temporary overwrites to test gray color
+// overwrites to use gray color
 
 = texture-blue($include_bg_color:true)
   @if $include_bg_color
