@@ -9,6 +9,9 @@ body > nav
   background: rgba(15, 40, 48, .05)
   z-index: 10
   +single-transition(background, .4s)
+  ul
+    +layout-width
+    margin: 0 auto
   li
     +inline-block
     margin-right: 50px
@@ -25,3 +28,40 @@ body > nav
 
 body > nav.scrolling
   background: rgba(15, 40, 48, .75)
+  
+
+/* media queries ---------------------------------------------------------- */
+
+// tablet --------------------------------------------------------------------
+
+@media screen and (max-width: 940px)
+  #intro
+
+
+// phone (portrait) ----------------------------------------------------------
+
+@media screen and (max-width: 768px)
+  body > nav
+    +portrait-width
+    position: relative
+    height: 123px
+    margin: 0 auto -123px
+    background: transparent
+    ul
+      +portrait-width
+      padding: 3px 3px 0
+    li
+      display: block
+      margin-right: 0
+      margin-bottom: 3px
+      &:last-child
+        display: none
+    a
+      display: block
+      height: 24px
+      padding: 7px 0
+      background: rgba(15, 40, 48, .35)      
+      +border-radius(10px)
+    
+  body > nav.scrolling
+    background: transparent

@@ -24,3 +24,35 @@
     +open-sans
     font-size: 21px
     letter-spacing: 1px
+
+
+/* media queries ---------------------------------------------------------- */
+
+// tablet --------------------------------------------------------------------
+@media screen and (max-width: 940px)
+  #intro
+
+
+// phone (portrait) ----------------------------------------------------------
+@media screen and (max-width: 768px)
+  #intro
+    padding-bottom: 30px
+    h1
+      left: 0px
+      +portrait_width
+      height: 351px
+      margin: 0 auto -60px
+      background-position: -59px
+      +background-size(400px 351px)      
+      // height: 281px
+      // background-position: -9px
+      // +background-size(320px, 281px)
+    h2
+      position: relative
+      margin-bottom: 20px
+      font-size: 24px
+      line-height: 32px
+    h3
+      position: relative
+      font-size: 19px
+      line-height: 23px

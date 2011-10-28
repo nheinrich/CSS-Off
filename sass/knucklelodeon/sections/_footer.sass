@@ -25,14 +25,44 @@
         letter-spacing: 0
         &:first-child, &.first
           float: left
-          text-align: right    
+          text-align: right
   .license
     border-top: 7px solid rgba(0, 0, 0, .075)
     padding-top: 25px
     text-align: center
     font-size: 14px
+    line-height: 18px
     letter-spacing: 0
     margin-bottom: 0 !important
     img
       display: block
       margin: 25px auto
+
+
+/* media queries ---------------------------------------------------------- */
+
+// tablet --------------------------------------------------------------------
+@media screen and (max-width: 940px)
+  #footer
+
+
+// phone (portrait) ----------------------------------------------------------
+@media screen and (max-width: 768px)
+  #footer
+    .container
+      h1
+        margin-bottom: 20px
+        padding-top: 115px
+      h2
+        margin-bottom: 20px
+      > div
+        margin-bottom: 33px
+        p, address
+          float: none
+          width: 300px
+          margin: 0 auto 10px
+          text-align: center
+          &:first-child, &.first
+            float: none
+            text-align: center
+            margin: 0 auto 10px

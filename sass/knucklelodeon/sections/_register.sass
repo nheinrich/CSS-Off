@@ -17,7 +17,7 @@
     position: relative
     float: left
     left: 4px
-    +column(5)    
+    +column(5)
     padding-top: 20px
     font-size: 15px
     letter-spacing: 1px
@@ -59,25 +59,25 @@
       position: absolute
       +texture-orange
       +border-radius(6px)
-      z-index: 2      
+      z-index: 2
       li
         display: none
         height: 50px
         cursor: pointer
         &.selected
           display: block
-          background: image-url("register/select-arrow.png") right bottom no-repeat        
+          background: image-url("register/select-arrow.png") right bottom no-repeat
       a
         padding-left: 15px
         line-height: 50px
     ol.expanded
-      +single-box-shadow(rgba(15, 40, 48, 1), 0, 0, 6px, 0)    
+      +single-box-shadow(rgba(15, 40, 48, 1), 0, 0, 6px, 0)
       li
         display: block
         border-top: 1px solid rgba(255, 255, 255, .25)
         border-bottom: 1px solid rgba(0, 0, 0, .25)
         &.selected
-          +texture-green          
+          +texture-green
         &:first-child, &:first-child:hover
         &.first, &.first:hover
           border-top: 0
@@ -87,7 +87,8 @@
           border-bottom: 0
           +border-bottom-radius(6px)
         &:hover
-          +texture-green      
+          +texture-green
+      z-index: 3
     #color, .color
       left: 0
       width: 220px
@@ -95,7 +96,7 @@
     #gender, .gender
       right: 0
       width: 145px
-          
+
   form > button
     width: 100%
     height: 155px
@@ -109,18 +110,18 @@
       +komika-title
       font-size: 25px
       letter-spacing: 1px
-      +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)      
+      +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)
       +rotate(-7.5deg)
       +single-transition(all, .1s)
     &:hover
       span
         font-size: 30px
-        
+
   .success
     display: none
     float: left
     height: 220px
-    margin: 60px 0 0 45px    
+    margin: 60px 0 0 45px
     padding-top: 60px
     text-align: center
     background: image_url("slime/medium-on-blue.png") center 0 no-repeat
@@ -162,3 +163,50 @@
         font-size: 34px
         &.small
           font-size: 30px
+
+
+/* media queries ---------------------------------------------------------- */
+
+// tablet --------------------------------------------------------------------
+@media screen and (max-width: 940px)
+  #register
+
+
+// phone (portrait) ----------------------------------------------------------
+@media screen and (max-width: 768px)
+  #register
+    .container
+      padding-top: 25px
+      padding-bottom: 25px
+    header.section
+      h1
+        width: 300px
+        height: 105px
+        line-height: 48px
+    form
+      width: 284px
+      margin-right: 0
+      padding: 0 6px
+      input
+        width: 272px
+      fieldset
+        height: 113px
+      #color, .color,
+      #gender, .gender
+        clear: both
+        width: 300px
+        left: 0
+      #color, .color
+        top: 0
+        margin-right: 0
+        margin-bottom: 15px
+      #gender, .gender
+        top: 65px
+      button
+        width: 290px
+    
+    .success
+      width: 290px
+      
+    aside
+      display: none

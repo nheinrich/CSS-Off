@@ -95,3 +95,84 @@
     right: 60px
   &.down-the-hatch img
     right: 30px
+
+
+/* media queries ---------------------------------------------------------- */
+
+// tablet --------------------------------------------------------------------
+@media screen and (max-width: 940px)
+  #obstacles
+
+
+// phone (portrait) ----------------------------------------------------------
+@media screen and (max-width: 768px)
+  // obstacles sprite 1320 x 440
+  #obstacles
+    .container
+      padding-top: 25px
+      padding-bottom: 0
+    ul
+      padding: 0 10px
+    li
+      width: 48px
+      height: 48px
+      margin-right: 2px !important
+      a
+        width: 48px
+        height: 48px
+        padding-top: 0
+        +background-size(264px 88px)
+        text-indent: -9999px
+        
+      &.the-tank a
+        background: image_url("obstacles/sprite.png") 3px 3px no-repeat
+      &.sundae-slide a
+        background: image_url("obstacles/sprite.png") -41px 3px no-repeat
+      &.human-hamster-wheel a
+        background: image_url("obstacles/sprite.png") -85px 3px no-repeat
+      &.down-the-hatch a
+        background: image_url("obstacles/sprite.png") -129px 3px no-repeat
+      &.pick-it a
+        background: image_url("obstacles/sprite.png") -173px 3px no-repeat
+      &.the-wringer a
+        background: image_url("obstacles/sprite.png") -217px 3px no-repeat
+      &:hover, &.selected
+        a
+          background-position-y: -41px !important
+
+  #obstacle
+    position: relative
+    float: right
+    width: 310px
+    height: auto
+    min-height: 380px    
+    padding-bottom: 30px
+    header
+      // +box-sizing(border-box)
+      // height: 220px
+      // margin-bottom: 20px
+      // padding-top: 55px
+      // text-align: center
+      // background: image_url("slime/medium-on-orange.png") center 0 no-repeat
+      height: auto
+      margin-bottom: 25px
+      padding-top: 0
+      background: transparent
+    h1, h2
+      +rotate(0deg)
+    h1
+      font-size: 24px
+      line-height: 30px
+      margin-bottom: 8px
+    h2
+      font-size: 16px
+      line-height: 22px
+    img
+      position: static
+      top: 100px
+      max-width: 300px
+      margin: 0 auto
+    &.sundae-slide img
+      right: 0px
+    &.down-the-hatch img
+      right: 0px

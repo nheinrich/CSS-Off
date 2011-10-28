@@ -5,9 +5,31 @@ section .container
     margin-bottom: 55px
     background: image_url("patterns/checkers.png")
 
+/* media queries ---------------------------------------------------------- */
+
+// tablet --------------------------------------------------------------------
+
+@media screen and (max-width: 940px)
+  section .container
+    width: 768px
+
+// phone (portrait) ----------------------------------------------------------
+@media screen and (max-width: 768px)
+  section .container
+    +portrait-width
+    > header.section
+      margin-bottom: 20px
+      padding-left: 10px
+      background: transparent
+
+
+// sections ------------------------------------------------------------------
+
 @import intro
 @import obstacles
 @import prizes
 @import register
 @import footer
+
+
 

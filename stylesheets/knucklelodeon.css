@@ -622,6 +622,14 @@ body > nav {
   -o-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
+body > nav ul {
+  width: 940px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 body > nav li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -658,6 +666,44 @@ body > nav.scrolling {
   background: rgba(15, 40, 48, 0.75);
 }
 
+/* media queries ---------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  body > nav {
+    width: 320px;
+    position: relative;
+    height: 123px;
+    margin: 0 auto -123px;
+    background: transparent;
+  }
+  body > nav ul {
+    width: 320px;
+    padding: 3px 3px 0;
+  }
+  body > nav li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 3px;
+  }
+  body > nav li:last-child {
+    display: none;
+  }
+  body > nav a {
+    display: block;
+    height: 24px;
+    padding: 7px 0;
+    background: rgba(15, 40, 48, 0.35);
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  body > nav.scrolling {
+    background: transparent;
+  }
+}
 section .container {
   width: 940px;
   -moz-box-sizing: border-box;
@@ -671,6 +717,22 @@ section .container > header.section {
   background: url('../images/patterns/checkers.png?1319259254');
 }
 
+/* media queries ---------------------------------------------------------- */
+@media screen and (max-width: 940px) {
+  section .container {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .container {
+    width: 320px;
+  }
+  section .container > header.section {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background: transparent;
+  }
+}
 /* intro ------------------------------------------------------------------ */
 #intro {
   padding: 69px 0 85px;
@@ -707,6 +769,34 @@ section .container > header.section {
   letter-spacing: 1px;
 }
 
+/* media queries ---------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #intro {
+    padding-bottom: 30px;
+  }
+  #intro h1 {
+    left: 0px;
+    width: 320px;
+    height: 351px;
+    margin: 0 auto -60px;
+    background-position: -59px;
+    -moz-background-size: 400px 351px;
+    -webkit-background-size: 400px 351px;
+    -o-background-size: 400px 351px;
+    background-size: 400px 351px;
+  }
+  #intro h2 {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  #intro h3 {
+    position: relative;
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
 /* obstacles -------------------------------------------------------------- */
 #obstacles {
   background: #ff5924 url('../images/textures/gray.png?1319262776');
@@ -856,6 +946,95 @@ section .container > header.section {
   right: 30px;
 }
 
+/* media queries ---------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #obstacles .container {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+  #obstacles ul {
+    padding: 0 10px;
+  }
+  #obstacles li {
+    width: 48px;
+    height: 48px;
+    margin-right: 2px !important;
+  }
+  #obstacles li a {
+    width: 48px;
+    height: 48px;
+    padding-top: 0;
+    -moz-background-size: 264px 88px;
+    -webkit-background-size: 264px 88px;
+    -o-background-size: 264px 88px;
+    background-size: 264px 88px;
+    text-indent: -9999px;
+  }
+  #obstacles li.the-tank a {
+    background: url('../images/obstacles/sprite.png?1319259254') 3px 3px no-repeat;
+  }
+  #obstacles li.sundae-slide a {
+    background: url('../images/obstacles/sprite.png?1319259254') -41px 3px no-repeat;
+  }
+  #obstacles li.human-hamster-wheel a {
+    background: url('../images/obstacles/sprite.png?1319259254') -85px 3px no-repeat;
+  }
+  #obstacles li.down-the-hatch a {
+    background: url('../images/obstacles/sprite.png?1319259254') -129px 3px no-repeat;
+  }
+  #obstacles li.pick-it a {
+    background: url('../images/obstacles/sprite.png?1319259254') -173px 3px no-repeat;
+  }
+  #obstacles li.the-wringer a {
+    background: url('../images/obstacles/sprite.png?1319259254') -217px 3px no-repeat;
+  }
+  #obstacles li:hover a, #obstacles li.selected a {
+    background-position-y: -41px !important;
+  }
+
+  #obstacle {
+    position: relative;
+    float: right;
+    width: 310px;
+    height: auto;
+    min-height: 380px;
+    padding-bottom: 30px;
+  }
+  #obstacle header {
+    height: auto;
+    margin-bottom: 25px;
+    padding-top: 0;
+    background: transparent;
+  }
+  #obstacle h1, #obstacle h2 {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  #obstacle h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 8px;
+  }
+  #obstacle h2 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  #obstacle img {
+    position: static;
+    top: 100px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  #obstacle.sundae-slide img {
+    right: 0px;
+  }
+  #obstacle.down-the-hatch img {
+    right: 0px;
+  }
+}
 /* prizes ----------------------------------------------------------------- */
 #prizes {
   background: #6db933 url('../images/textures/gray.png?1319262776');
@@ -944,6 +1123,31 @@ section .container > header.section {
   animation: bobble 0.45s infinite;
 }
 
+/* media queries ---------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #prizes .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #prizes header.section {
+    margin-bottom: 35px;
+  }
+  #prizes ul {
+    padding: 0 10px;
+  }
+  #prizes li {
+    width: 300px;
+    float: none;
+    margin: 0 0 40px !important;
+    padding-top: 0px;
+    text-align: center;
+    clear: both;
+  }
+  #prizes img {
+    width: 300px;
+    margin: 0 0 10px !important;
+  }
+}
 /* register --------------------------------------------------------------- */
 #register {
   background: url('../images/textures/gray.png?1319262776');
@@ -1055,6 +1259,7 @@ section .container > header.section {
   -webkit-box-shadow: 0 0 6px 0 #0f2830;
   -o-box-shadow: 0 0 6px 0 #0f2830;
   box-shadow: 0 0 6px 0 #0f2830;
+  z-index: 3;
 }
 #register form ol.expanded li {
   display: block;
@@ -1199,6 +1404,52 @@ section .container > header.section {
   font-size: 30px;
 }
 
+/* media queries ---------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #register .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #register header.section h1 {
+    width: 300px;
+    height: 105px;
+    line-height: 48px;
+  }
+  #register form {
+    width: 284px;
+    margin-right: 0;
+    padding: 0 6px;
+  }
+  #register form input {
+    width: 272px;
+  }
+  #register form fieldset {
+    height: 113px;
+  }
+  #register form #color, #register form .color,
+  #register form #gender, #register form .gender {
+    clear: both;
+    width: 300px;
+    left: 0;
+  }
+  #register form #color, #register form .color {
+    top: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  #register form #gender, #register form .gender {
+    top: 65px;
+  }
+  #register form button {
+    width: 290px;
+  }
+  #register .success {
+    width: 290px;
+  }
+  #register aside {
+    display: none;
+  }
+}
 /* footer ----------------------------------------------------------------- */
 #footer {
   font-family: "OpenSans", "Arial", "Sans-serif";
@@ -1245,10 +1496,36 @@ section .container > header.section {
   padding-top: 25px;
   text-align: center;
   font-size: 14px;
+  line-height: 18px;
   letter-spacing: 0;
   margin-bottom: 0 !important;
 }
 #footer .license img {
   display: block;
   margin: 25px auto;
+}
+
+/* media queries ---------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  #footer .container h1 {
+    margin-bottom: 20px;
+    padding-top: 115px;
+  }
+  #footer .container h2 {
+    margin-bottom: 20px;
+  }
+  #footer .container > div {
+    margin-bottom: 33px;
+  }
+  #footer .container > div p, #footer .container > div address {
+    float: none;
+    width: 300px;
+    margin: 0 auto 10px;
+    text-align: center;
+  }
+  #footer .container > div p:first-child, #footer .container > div p.first, #footer .container > div address:first-child, #footer .container > div address.first {
+    float: none;
+    text-align: center;
+    margin: 0 auto 10px;
+  }
 }
