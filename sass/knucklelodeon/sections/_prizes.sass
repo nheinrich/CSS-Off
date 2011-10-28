@@ -9,7 +9,7 @@
     padding: 50px 0 80px
 
   header.section
-    margin-bottom: 65px
+    margin-bottom: 45px
     background-position: 0 -20px
     h1
       width: 180px
@@ -21,9 +21,11 @@
   ul
     +clearfix
   li
+    position: relative
     width: 400px
     float: left
     margin: 0 20px 100px 20px
+    padding-top: 20px
     text-align: center
     letter-spacing: 0
     /* items on left */
@@ -41,3 +43,13 @@
       margin-bottom: 15px
     &.tv-vcr
       margin-top: -195px
+
+    /* animations */
+    &.space-camp img:hover
+      +animation-swing
+    &.skateboard img:hover    
+      +animation-tada
+    &.keyboard img:hover
+      +animation-pulse
+    &.tv-vcr img:hover
+      +animation-bounce

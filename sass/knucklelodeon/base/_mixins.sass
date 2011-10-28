@@ -9,38 +9,295 @@
 
 = texture($color)
   background: eval("$bg_#{$color}") image_url("textures/#{$color}.png")
-  
+
 // using individual mixins until the above is working
 
 // = texture-blue($include_bg_color:true)
 //   @if $include_bg_color
-//     background: $bg_blue image_url("textures/blue.png")  
+//     background: $bg_blue image_url("textures/blue.png")
 //   @else
 //     background: image_url("textures/blue.png")
-//   
+//
 // = texture-green
 //   background: $bg_green image_url("textures/green.png")
-//   
+//
 // = texture-orange
 //   background: $bg_orange image_url("textures/orange.png")
-// 
+//
 // = texture-yellow
 //   background: $bg_yellow image_url("textures/yellow.png")
-  
-  
+
+
 // overwrites to use gray color
 
 = texture-blue($include_bg_color:true)
   @if $include_bg_color
-    background: $bg_blue image_url("textures/gray.png")  
+    background: $bg_blue image_url("textures/gray.png")
   @else
     background: image_url("textures/gray.png")
-  
+
 = texture-green
   background: $bg_green image_url("textures/gray.png")
-  
+
 = texture-orange
   background: $bg_orange image_url("textures/gray.png")
 
 = texture-yellow
   background: $bg_yellow image_url("textures/gray.png")
+
+
+/* animations ------------------------------------------------------------- */
+
+/* bounce ----------------------------------------------------------------- */
+
+@-webkit-keyframes bounce 
+  0%, 80%, 100% 
+    -webkit-transform: translateY(0)
+  70% 
+    -webkit-transform: translateY(-12px)
+  90% 
+    -webkit-transform: translateY(-6px)
+
+
+@-moz-keyframes bounce 
+  0%, 80%, 100% 
+    -moz-transform: translateY(0)
+  70% 
+    -moz-transform: translateY(-12px)
+  90% 
+    -moz-transform: translateY(-6px)
+
+
+@-ms-keyframes bounce 
+  0%, 80%, 100% 
+    -ms-transform: translateY(0)
+  70% 
+    -ms-transform: translateY(-12px)
+  90% 
+    -ms-transform: translateY(-6px)
+
+
+@-o-keyframes bounce 
+  0%, 80%, 100% 
+    -o-transform: translateY(0)
+  70% 
+    -o-transform: translateY(-12px)
+  90% 
+    -o-transform: translateY(-6px)
+
+@keyframes bounce 
+  0%, 80%, 100% 
+    transform: translateY(0)
+  70% 
+    transform: translateY(-12px)
+  90% 
+    transform: translateY(-6px)
+
+=animation-bounce
+  -webkit-animation: bounce 1.2s infinite
+  -moz-animation: bounce 1.2s infinite
+  -ms-animation: bounce 1.2s infinite
+  -o-animation: bounce 1.2s infinite
+  animation: bounce 1.2s infinite
+
+
+/* pulse ------------------------------------------------------------------ */
+
+@-webkit-keyframes pulse
+  0%, 100%
+    -webkit-transform: scale(1)
+  50%
+    -webkit-transform: scale(1.1)
+
+@-moz-keyframes pulse
+  0%, 100%
+    -moz-transform: scale(1)
+  50%
+    -moz-transform: scale(1.1)
+
+@-ms-keyframes pulse
+  0%, 100%
+    -ms-transform: scale(1)
+  50%
+    -ms-transform: scale(1.1)
+
+@-o-keyframes pulse
+  0%, 100%
+    -o-transform: scale(1)
+  50%
+    -o-transform: scale(1.1)
+
+@keyframes pulse
+  0%, 100%
+    transform: scale(1)
+  50%
+    transform: scale(1.1)
+
+=animation-pulse
+  -webkit-animation: pulse .45s infinite
+  -moz-animation: pulse .45s infinite
+  -ms-animation: pulse .45s infinite
+  -o-animation: pulse .45s infinite
+  animation: pulse .45s infinite
+
+
+/* swing ------------------------------------------------------------------ */
+
+@-webkit-keyframes swing 
+  20%, 40%, 60%, 80%, 100%  
+    -webkit-transform-origin: center center 
+  0%  
+    -webkit-transform: rotate(0deg) 
+  25%  
+    -webkit-transform: rotate(-1.5deg) 
+  50%  
+    -webkit-transform: rotate(0deg) 
+  75%  
+    -webkit-transform: rotate(1.5deg) 
+  100%  
+    -webkit-transform: rotate(0deg) 
+
+
+@-moz-keyframes swing 
+  0%  
+    -moz-transform: rotate(0deg) 
+  25%  
+    -moz-transform: rotate(-1.5deg) 
+  50%  
+    -moz-transform: rotate(0deg) 
+  75%  
+    -moz-transform: rotate(1.5deg) 
+  100%  
+    -moz-transform: rotate(0deg) 
+
+
+@-ms-keyframes swing 
+  0%  
+    -ms-transform: rotate(0deg) 
+  25%  
+    -ms-transform: rotate(-1.5deg) 
+  50%  
+    -ms-transform: rotate(0deg) 
+  75%  
+    -ms-transform: rotate(1.5deg) 
+  100%  
+    -ms-transform: rotate(0deg) 
+
+
+@-o-keyframes swing 
+  0%  
+    -o-transform: rotate(0deg) 
+  25%  
+    -o-transform: rotate(-1.5deg) 
+  50%  
+    -o-transform: rotate(0deg) 
+  75%  
+    -o-transform: rotate(1.5deg) 
+  100%  
+    -o-transform: rotate(0deg) 
+
+
+@keyframes swing 
+  0%  
+    transform: rotate(0deg) 
+  25%  
+    transform: rotate(-1.5deg) 
+  50%  
+    transform: rotate(0deg) 
+  75%  
+    transform: rotate(1.5deg) 
+  100%  
+    transform: rotate(0deg) 
+
+=animation-swing
+  -webkit-transform-origin: center center
+  -moz-transform-origin: center center
+  -ms-transform-origin: center center
+  -o-transform-origin: center center
+  transform-origin: center center
+  -webkit-animation: swing 1s infinite
+  -moz-animation: swing 1s infinite
+  -ms-animation: swing 1s infinite
+  -o-animation: swing 1s infinite
+  animation: swing 1s infinite
+
+
+/* tada ------------------------------------------------------------------- */
+
+@-webkit-keyframes tada 
+  0% 
+    -webkit-transform: scale(1)
+  10%, 20% 
+    -webkit-transform: scale(0.95) rotate(-5deg)
+  30%, 50%, 70%, 90% 
+    -webkit-transform: scale(1) rotate(-15deg)
+  40% 
+    -webkit-transform: scale(1) rotate(-27deg)
+  60%, 80% 
+    -webkit-transform: scale(1) rotate(-22deg)
+  100% 
+    -webkit-transform: scale(1) rotate(0)
+
+@-moz-keyframes tada 
+  0% 
+    -moz-transform: scale(1)
+  10%, 20% 
+    -moz-transform: scale(0.95) rotate(-5deg)
+  30%, 50%, 70%, 90% 
+    -moz-transform: scale(1) rotate(-15deg)
+  40% 
+    -moz-transform: scale(1) rotate(-27deg)
+  60%, 80% 
+    -moz-transform: scale(1) rotate(-22deg)
+  100% 
+    -moz-transform: scale(1) rotate(0)
+
+@-ms-keyframes tada 
+  0% 
+    -ms-transform: scale(1)
+  10%, 20% 
+    -ms-transform: scale(0.95) rotate(-5deg)
+  30%, 50%, 70%, 90% 
+    -ms-transform: scale(1) rotate(-15deg)
+  40% 
+    -ms-transform: scale(1) rotate(-27deg)
+  60%, 80% 
+    -ms-transform: scale(1) rotate(-22deg)
+  100% 
+    -ms-transform: scale(1) rotate(0)
+
+
+@-o-keyframes tada 
+  0% 
+    -o-transform: scale(1)
+  10%, 20% 
+    -o-transform: scale(0.95) rotate(-5deg)
+  30%, 50%, 70%, 90% 
+    -o-transform: scale(1) rotate(-15deg)
+  40% 
+    -o-transform: scale(1) rotate(-27deg)
+  60%, 80% 
+    -o-transform: scale(1) rotate(-22deg)
+  100% 
+    -o-transform: scale(1) rotate(0)
+
+@keyframes tada 
+  0% 
+    transform: scale(1)
+  10%, 20% 
+    transform: scale(0.95) rotate(-5deg)
+  30%, 50%, 70%, 90% 
+    transform: scale(1) rotate(-15deg)
+  40% 
+    transform: scale(1) rotate(-27deg)
+  60%, 80% 
+    transform: scale(1) rotate(-22deg)
+  100% 
+    transform: scale(1) rotate(0)
+
+=animation-tada
+  -webkit-animation: tada 1.2s infinite
+  -moz-animation: tada 1.2s infinite
+  -ms-animation: tada 1.2s infinite
+  -o-animation: tada 1.2s infinite
+  animation: tada 1.2s infinite

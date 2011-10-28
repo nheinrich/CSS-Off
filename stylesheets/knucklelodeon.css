@@ -63,6 +63,375 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* animations ------------------------------------------------------------- */
+/* bounce ----------------------------------------------------------------- */
+@-webkit-keyframes bounce {
+  0%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+
+  70% {
+    -webkit-transform: translateY(-12px);
+  }
+
+  90% {
+    -webkit-transform: translateY(-6px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%, 80%, 100% {
+    -moz-transform: translateY(0);
+  }
+
+  70% {
+    -moz-transform: translateY(-12px);
+  }
+
+  90% {
+    -moz-transform: translateY(-6px);
+  }
+}
+
+@-ms-keyframes bounce {
+  0%, 80%, 100% {
+    -ms-transform: translateY(0);
+  }
+
+  70% {
+    -ms-transform: translateY(-12px);
+  }
+
+  90% {
+    -ms-transform: translateY(-6px);
+  }
+}
+
+@-o-keyframes bounce {
+  0%, 80%, 100% {
+    -o-transform: translateY(0);
+  }
+
+  70% {
+    -o-transform: translateY(-12px);
+  }
+
+  90% {
+    -o-transform: translateY(-6px);
+  }
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-12px);
+  }
+
+  90% {
+    transform: translateY(-6px);
+  }
+}
+
+/* pulse ------------------------------------------------------------------ */
+@-webkit-keyframes pulse {
+  0%, 100% {
+    -webkit-transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0%, 100% {
+    -moz-transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.1);
+  }
+}
+
+@-ms-keyframes pulse {
+  0%, 100% {
+    -ms-transform: scale(1);
+  }
+
+  50% {
+    -ms-transform: scale(1.1);
+  }
+}
+
+@-o-keyframes pulse {
+  0%, 100% {
+    -o-transform: scale(1);
+  }
+
+  50% {
+    -o-transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* swing ------------------------------------------------------------------ */
+@-webkit-keyframes swing {
+  20%, 40%, 60%, 80%, 100% {
+    -webkit-transform-origin: center center;
+  }
+
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  25% {
+    -webkit-transform: rotate(-1.5deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(1.5deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes swing {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  25% {
+    -moz-transform: rotate(-1.5deg);
+  }
+
+  50% {
+    -moz-transform: rotate(0deg);
+  }
+
+  75% {
+    -moz-transform: rotate(1.5deg);
+  }
+
+  100% {
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes swing {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  25% {
+    -ms-transform: rotate(-1.5deg);
+  }
+
+  50% {
+    -ms-transform: rotate(0deg);
+  }
+
+  75% {
+    -ms-transform: rotate(1.5deg);
+  }
+
+  100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes swing {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  25% {
+    -o-transform: rotate(-1.5deg);
+  }
+
+  50% {
+    -o-transform: rotate(0deg);
+  }
+
+  75% {
+    -o-transform: rotate(1.5deg);
+  }
+
+  100% {
+    -o-transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-1.5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(1.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* tada ------------------------------------------------------------------- */
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale(0.95) rotate(-5deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1) rotate(-15deg);
+  }
+
+  40% {
+    -webkit-transform: scale(1) rotate(-27deg);
+  }
+
+  60%, 80% {
+    -webkit-transform: scale(1) rotate(-22deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0);
+  }
+}
+
+@-moz-keyframes tada {
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  10%, 20% {
+    -moz-transform: scale(0.95) rotate(-5deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -moz-transform: scale(1) rotate(-15deg);
+  }
+
+  40% {
+    -moz-transform: scale(1) rotate(-27deg);
+  }
+
+  60%, 80% {
+    -moz-transform: scale(1) rotate(-22deg);
+  }
+
+  100% {
+    -moz-transform: scale(1) rotate(0);
+  }
+}
+
+@-ms-keyframes tada {
+  0% {
+    -ms-transform: scale(1);
+  }
+
+  10%, 20% {
+    -ms-transform: scale(0.95) rotate(-5deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -ms-transform: scale(1) rotate(-15deg);
+  }
+
+  40% {
+    -ms-transform: scale(1) rotate(-27deg);
+  }
+
+  60%, 80% {
+    -ms-transform: scale(1) rotate(-22deg);
+  }
+
+  100% {
+    -ms-transform: scale(1) rotate(0);
+  }
+}
+
+@-o-keyframes tada {
+  0% {
+    -o-transform: scale(1);
+  }
+
+  10%, 20% {
+    -o-transform: scale(0.95) rotate(-5deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -o-transform: scale(1) rotate(-15deg);
+  }
+
+  40% {
+    -o-transform: scale(1) rotate(-27deg);
+  }
+
+  60%, 80% {
+    -o-transform: scale(1) rotate(-22deg);
+  }
+
+  100% {
+    -o-transform: scale(1) rotate(0);
+  }
+}
+
+@keyframes tada {
+  0% {
+    transform: scale(1);
+  }
+
+  10%, 20% {
+    transform: scale(0.95) rotate(-5deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale(1) rotate(-15deg);
+  }
+
+  40% {
+    transform: scale(1) rotate(-27deg);
+  }
+
+  60%, 80% {
+    transform: scale(1) rotate(-22deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0);
+  }
+}
+
 /* fonts ------------------------------------------------------------------ */
 @font-face {
   font-family: "DigitaldreamFat";
@@ -373,7 +742,7 @@ section .container > header.section {
   padding: 50px 0 80px;
 }
 #prizes header.section {
-  margin-bottom: 65px;
+  margin-bottom: 45px;
   background-position: 0 -20px;
 }
 #prizes header.section h1 {
@@ -388,15 +757,18 @@ section .container > header.section {
   *zoom: 1;
 }
 #prizes li {
+  position: relative;
   width: 400px;
   float: left;
   margin: 0 20px 100px 20px;
+  padding-top: 20px;
   text-align: center;
   letter-spacing: 0;
   /* items on left */
   /* items on right */
   /* items on bottom */
   /* special positioning */
+  /* animations */
 }
 #prizes li.space-camp, #prizes li.keyboard {
   clear: left;
@@ -413,6 +785,39 @@ section .container > header.section {
 }
 #prizes li.tv-vcr {
   margin-top: -195px;
+}
+#prizes li.space-camp img:hover {
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: swing 1s infinite;
+  -moz-animation: swing 1s infinite;
+  -ms-animation: swing 1s infinite;
+  -o-animation: swing 1s infinite;
+  animation: swing 1s infinite;
+}
+#prizes li.skateboard img:hover {
+  -webkit-animation: tada 1.2s infinite;
+  -moz-animation: tada 1.2s infinite;
+  -ms-animation: tada 1.2s infinite;
+  -o-animation: tada 1.2s infinite;
+  animation: tada 1.2s infinite;
+}
+#prizes li.keyboard img:hover {
+  -webkit-animation: pulse 0.45s infinite;
+  -moz-animation: pulse 0.45s infinite;
+  -ms-animation: pulse 0.45s infinite;
+  -o-animation: pulse 0.45s infinite;
+  animation: pulse 0.45s infinite;
+}
+#prizes li.tv-vcr img:hover {
+  -webkit-animation: bounce 1.2s infinite;
+  -moz-animation: bounce 1.2s infinite;
+  -ms-animation: bounce 1.2s infinite;
+  -o-animation: bounce 1.2s infinite;
+  animation: bounce 1.2s infinite;
 }
 
 /* register --------------------------------------------------------------- */
