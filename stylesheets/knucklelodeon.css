@@ -574,7 +574,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* background ------------------------------------------------------------- */
 body {
-  background: #6ec2d8 url('../images/slime/bg_overlay.png?1319259254') 83% -200px no-repeat;
+  background: #6ec2d8 url('../images/slime/bg_overlay.png?1319777981') center -200px no-repeat;
 }
 
 /* typography (patterns) -------------------------------------------------- */
@@ -682,7 +682,7 @@ section .container > header.section {
   left: -34px;
   width: 490px;
   height: 430px;
-  margin: 0 auto 39px;
+  margin: 0 auto 32px;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
@@ -697,8 +697,9 @@ section .container > header.section {
   color: #ff5822;
   text-align: center;
   font-size: 51px;
+  line-height: 64px;
   text-shadow: white 2px 3px 0;
-  margin-bottom: 19px;
+  margin-bottom: 13px;
 }
 #intro h3 {
   font-family: "OpenSans", "Arial", "Sans-serif";
