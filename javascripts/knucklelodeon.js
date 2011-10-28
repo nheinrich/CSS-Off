@@ -65,7 +65,7 @@ k.obstacles.show = function($link){
 
   // populate h2
   $obstacle.find("h2").fadeOut(function(){
-    $(this).html($link.attr("title")).fadeIn();
+    $(this).html($link.attr("data-description")).fadeIn();
   });
 
   // set new selection on link list

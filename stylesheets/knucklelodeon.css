@@ -681,6 +681,14 @@ section .container > header.section {
 #obstacles li:hover a, #obstacles li.selected a {
   color: #ff5822;
   background-position-y: -233px !important;
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
 #obstacle {
