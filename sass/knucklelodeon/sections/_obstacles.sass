@@ -16,12 +16,9 @@
   ul
     width: 460px
     float: left
-
   li
     position: relative
     float: left
-    width: 220px
-    height: 220px
     margin: 0 20px 20px 0
     +texture-green
     +border-radius(8px)
@@ -31,18 +28,19 @@
       +box-sizing(border-box)
       width: 220px
       height: 220px
-      padding-top: 195px
+      padding-top: 88%
       text-align: center
       font-size: 14px
+      line-height: 1.3em
       letter-spacing: 1px
       color: rgba(255, 255, 255, 1)
-      +single-transition(color, .4s)  
+      +single-transition(color, .4s)
     &:nth-child(even),
     &.sundae-slide,
     &.down-the-hatch,
     &.the-wringer
       margin-right: 0
-      
+
     &.the-tank a
       background: image_url("obstacles/sprite.png") 0 -12px no-repeat
     &.sundae-slide a
@@ -65,7 +63,7 @@
 #obstacle
   position: relative
   float: right
-  width: 460px
+  width: 48.9361702%
   height: 700px
   header
     +box-sizing(border-box)
@@ -78,11 +76,12 @@
     +rotate(-7.5deg)
   h1
     font-size: 39px
-    line-height: 48px
+    line-height: 1.25em
     margin-bottom: 16px
     +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)
   h2
     font-size: 21px
+    line-height: 1.3em
     +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)
   img
     position: absolute
@@ -99,63 +98,197 @@
 
 /* media queries ---------------------------------------------------------- */
 
-// tablet --------------------------------------------------------------------
-@media screen and (max-width: 940px)
+@media screen and (max-width: 1035px)
+  // obstacles sprite 1320 x 440
   #obstacles
+    ul
+      width: 380px
+    li
+      a
+        width: 180px
+        height: 180px
+        font-size: 12px
+        +background-size(1080px 360px)
+
+      &.the-tank a
+        background-position: 0px -7px
+      &.sundae-slide a
+        background-position: -180px -7px
+      &.human-hamster-wheel a
+        background-position: -360px -7px
+      &.down-the-hatch a
+        background-position: -540px -7px
+      &.pick-it a
+        background-position: -720px -7px
+      &.the-wringer a
+        background-position: -900px -7px
+      &:hover, &.selected
+        a
+          background-position-y: -188px !important
+  #obstacle
+    height: 600px
+    header
+      margin-top: -30px
+    img
+      max-height: 415px
 
 
-// phone (portrait) ----------------------------------------------------------
-@media screen and (max-width: 768px)
+@media screen and (max-width: 935px)
+  // obstacles sprite 1320 x 440
+  #obstacles
+    ul
+      width: 300px
+    li
+      a
+        width: 140px
+        height: 140px
+        padding-top: 86%
+        +background-size(840px 280px)
+      &.the-tank a
+        background-position: 0px -7px
+      &.sundae-slide a
+        background-position: -140px -7px
+      &.human-hamster-wheel a
+        padding-top: 104px
+        background-position: -280px -7px
+      &.down-the-hatch a
+        background-position: -420px -7px
+      &.pick-it a
+        background-position: -560px -7px
+      &.the-wringer a
+        background-position: -700px -7px
+      &:hover, &.selected
+        a
+          background-position-y: -147px !important
+  #obstacle
+    height: 480px
+    header
+      // 240x220
+      padding-top: 30px
+      height: 160px
+      +background-size(180px 165px)
+      h1
+        font-size: 30px
+      h2
+        font-size: 18px
+    img
+      max-height: 365px
+      max-width: 360px
+
+
+@media screen and (max-width: 730px)
+  // obstacles sprite 1320 x 440
+  #obstacles
+    .container
+      padding-top: 25px
+      > header.section
+        margin-bottom: 30px
+    ul
+      width: 80px
+    li      
+      margin-right: 0px !important
+      margin-bottom: 5px
+      a
+        width: 80px
+        height: 80px
+        +background-size(480px 160px)
+        text-indent: -9999px
+      &.the-tank a
+        background-position: 0px 3px
+      &.sundae-slide a
+        background-position: -80px 3px
+      &.human-hamster-wheel a
+        padding-top: 88%
+        background-position: -160px 3px
+      &.down-the-hatch a
+        background-position: -240px 3px
+      &.pick-it a
+        background-position: -320px 3px
+      &.the-wringer a
+        background-position: -400px 3px
+      &:hover, &.selected
+        a
+          background-position-y: -80px !important
+  #obstacle
+    position: relative
+    float: right
+    width: 80%
+    height: 490px
+    padding-bottom: 30px
+    header
+      float: left
+      margin-top: 0
+    img
+      max-width: 400px
+      max-height: 480px
+      margin: 0 auto
+    &.sundae-slide img
+      right: 0px
+      max-height: 430px
+    &.down-the-hatch img
+      right: 0px
+      max-height: 420px
+
+
+@media screen and (max-width: 545px)
+  #obstacle
+    img
+      max-width: 100% !important
+      max-height: 400px !important
+
+
+@media screen and (max-width: 480px)
   // obstacles sprite 1320 x 440
   #obstacles
     .container
       padding-top: 25px
       padding-bottom: 0
+    nav
+      height: 75px
     ul
+      width: auto
+      margin-bottom: 20px
       padding: 0 10px
+      overflow: hidden
     li
-      width: 48px
-      height: 48px
+      float: left
       margin-right: 2px !important
       a
-        width: 48px
-        height: 48px
+        width: 75px
+        height: 75px
         padding-top: 0
-        +background-size(264px 88px)
+        +background-size(450px 150px)
         text-indent: -9999px
-        
       &.the-tank a
-        background: image_url("obstacles/sprite.png") 3px 3px no-repeat
+        background-position: 0px 3px
       &.sundae-slide a
-        background: image_url("obstacles/sprite.png") -41px 3px no-repeat
+        background-position: -75px 3px
       &.human-hamster-wheel a
-        background: image_url("obstacles/sprite.png") -85px 3px no-repeat
+        background-position: -150px 3px
       &.down-the-hatch a
-        background: image_url("obstacles/sprite.png") -129px 3px no-repeat
+        background-position: -225px 3px
       &.pick-it a
-        background: image_url("obstacles/sprite.png") -173px 3px no-repeat
-      &.the-wringer a
-        background: image_url("obstacles/sprite.png") -217px 3px no-repeat
+        background-position: -300px 3px
+      &.the-wringer 
+        margin-right: 0 !important
+        a
+          background-position: -375px 3px
       &:hover, &.selected
         a
-          background-position-y: -41px !important
-
+          background-position-y: -72px !important
   #obstacle
     position: relative
-    float: right
-    width: 310px
+    float: none
+    width: 460px
     height: auto
-    min-height: 380px    
-    padding-bottom: 30px
+    min-height: 380px
+    margin: 0 auto
+    padding: 0 10px 30px
+    text-align: center
     header
-      // +box-sizing(border-box)
-      // height: 220px
-      // margin-bottom: 20px
-      // padding-top: 55px
-      // text-align: center
-      // background: image_url("slime/medium-on-orange.png") center 0 no-repeat
       height: auto
-      margin-bottom: 25px
+      width: 100%
+      margin: 0 auto 25px
       padding-top: 0
       background: transparent
     h1, h2
@@ -169,10 +302,37 @@
       line-height: 22px
     img
       position: static
-      top: 100px
-      max-width: 300px
       margin: 0 auto
     &.sundae-slide img
       right: 0px
     &.down-the-hatch img
       right: 0px
+
+@media screen and (max-width: 320px)
+  // obstacles sprite 1320 x 440
+  #obstacles
+    li
+      a
+        width: 48px
+        height: 48px
+        +background-size(264px 88px)
+        text-indent: -9999px
+      &.the-tank a
+        background-position: 3px 3px
+      &.sundae-slide a
+        background-position: -41px 3px
+      &.human-hamster-wheel a
+        background-position: -85px 3px
+      &.down-the-hatch a
+        background-position: -129px 3px
+      &.pick-it a
+        background-position: -173px 3px
+      &.the-wringer a
+        background-position: -217px 3px
+      &:hover, &.selected
+        a
+          background-position-y: -41px !important
+  #obstacle
+    width: 300px
+    img
+      max-width: 280px !important

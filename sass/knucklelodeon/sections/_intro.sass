@@ -27,19 +27,14 @@
 
 /* media queries ---------------------------------------------------------- */
 
-// tablet --------------------------------------------------------------------
-@media screen and (max-width: 940px)
-  #intro
-
-
 @media screen and (max-width: 650px)
   #intro
     padding-bottom: 30px
     h1
-      height: 351px
+      height: 341px
       margin: 0 auto -60px
       background-position: center top
-      +background-size(400px 351px)
+      +background-size(380px)
     h2
       position: relative
       margin-bottom: 20px
@@ -54,6 +49,11 @@
       font-size: 24px
       line-height: 32px
     h3
-      position: relative
-      font-size: 19px
       line-height: 23px
+      
+@media screen and (max-width: 320px)
+  #intro
+    overflow: hidden
+    h1
+      left: -40px
+      width: 360px

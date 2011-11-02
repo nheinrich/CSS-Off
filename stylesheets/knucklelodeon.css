@@ -578,6 +578,10 @@ body {
 }
 
 /* typography (patterns) -------------------------------------------------- */
+html {
+  -webkit-text-size-adjust: none;
+}
+
 body {
   color: white;
   font-family: "KomikaTitle-Paint", "Arial Black", "Arial", "Sans-serif";
@@ -696,6 +700,9 @@ body > nav.scrolling {
     background: transparent;
   }
 }
+section {
+  padding: 0 5%;
+}
 section .container {
   max-width: 940px;
   margin: 0 auto;
@@ -709,7 +716,24 @@ section .container > header.section {
 @media screen and (max-width: 768px) {
   section .container > header.section {
     margin-bottom: 20px;
-    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  section {
+    padding: 0;
+  }
+  section .container > header.section {
+    margin-bottom: 20px;
+  }
+  section .container > header.section h1 {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  section {
+    padding: 0;
+  }
+  section .container > header.section {
     background: transparent;
   }
 }
@@ -754,13 +778,13 @@ section .container > header.section {
     padding-bottom: 30px;
   }
   #intro h1 {
-    height: 351px;
+    height: 341px;
     margin: 0 auto -60px;
     background-position: center top;
-    -moz-background-size: 400px 351px;
-    -webkit-background-size: 400px 351px;
-    -o-background-size: 400px 351px;
-    background-size: 400px 351px;
+    -moz-background-size: 380px;
+    -webkit-background-size: 380px;
+    -o-background-size: 380px;
+    background-size: 380px;
   }
   #intro h2 {
     position: relative;
@@ -778,9 +802,16 @@ section .container > header.section {
     line-height: 32px;
   }
   #intro h3 {
-    position: relative;
-    font-size: 19px;
     line-height: 23px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #intro {
+    overflow: hidden;
+  }
+  #intro h1 {
+    left: -40px;
+    width: 360px;
   }
 }
 /* obstacles -------------------------------------------------------------- */
@@ -805,8 +836,6 @@ section .container > header.section {
 #obstacles li {
   position: relative;
   float: left;
-  width: 220px;
-  height: 220px;
   margin: 0 20px 20px 0;
   background: #6db933 url('../images/textures/gray.png?1319262776');
   -moz-border-radius: 8px;
@@ -832,9 +861,10 @@ section .container > header.section {
   box-sizing: border-box;
   width: 220px;
   height: 220px;
-  padding-top: 195px;
+  padding-top: 88%;
   text-align: center;
   font-size: 14px;
+  line-height: 1.3em;
   letter-spacing: 1px;
   color: white;
   -moz-transition-property: color;
@@ -886,7 +916,7 @@ section .container > header.section {
 #obstacle {
   position: relative;
   float: right;
-  width: 460px;
+  width: 48.936%;
   height: 700px;
 }
 #obstacle header {
@@ -909,12 +939,13 @@ section .container > header.section {
 }
 #obstacle h1 {
   font-size: 39px;
-  line-height: 48px;
+  line-height: 1.25em;
   margin-bottom: 16px;
   text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 #obstacle h2 {
   font-size: 21px;
+  line-height: 1.3em;
   text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 #obstacle img {
@@ -933,62 +964,253 @@ section .container > header.section {
 }
 
 /* media queries ---------------------------------------------------------- */
-@media screen and (max-width: 768px) {
-  #obstacles .container {
-    padding-top: 25px;
-    padding-bottom: 0;
-  }
+@media screen and (max-width: 1035px) {
   #obstacles ul {
-    padding: 0 10px;
-  }
-  #obstacles li {
-    width: 48px;
-    height: 48px;
-    margin-right: 2px !important;
+    width: 380px;
   }
   #obstacles li a {
-    width: 48px;
-    height: 48px;
-    padding-top: 0;
-    -moz-background-size: 264px 88px;
-    -webkit-background-size: 264px 88px;
-    -o-background-size: 264px 88px;
-    background-size: 264px 88px;
+    width: 180px;
+    height: 180px;
+    font-size: 12px;
+    -moz-background-size: 1080px 360px;
+    -webkit-background-size: 1080px 360px;
+    -o-background-size: 1080px 360px;
+    background-size: 1080px 360px;
+  }
+  #obstacles li.the-tank a {
+    background-position: 0px -7px;
+  }
+  #obstacles li.sundae-slide a {
+    background-position: -180px -7px;
+  }
+  #obstacles li.human-hamster-wheel a {
+    background-position: -360px -7px;
+  }
+  #obstacles li.down-the-hatch a {
+    background-position: -540px -7px;
+  }
+  #obstacles li.pick-it a {
+    background-position: -720px -7px;
+  }
+  #obstacles li.the-wringer a {
+    background-position: -900px -7px;
+  }
+  #obstacles li:hover a, #obstacles li.selected a {
+    background-position-y: -188px !important;
+  }
+
+  #obstacle {
+    height: 600px;
+  }
+  #obstacle header {
+    margin-top: -30px;
+  }
+  #obstacle img {
+    max-height: 415px;
+  }
+}
+@media screen and (max-width: 935px) {
+  #obstacles ul {
+    width: 300px;
+  }
+  #obstacles li a {
+    width: 140px;
+    height: 140px;
+    padding-top: 86%;
+    -moz-background-size: 840px 280px;
+    -webkit-background-size: 840px 280px;
+    -o-background-size: 840px 280px;
+    background-size: 840px 280px;
+  }
+  #obstacles li.the-tank a {
+    background-position: 0px -7px;
+  }
+  #obstacles li.sundae-slide a {
+    background-position: -140px -7px;
+  }
+  #obstacles li.human-hamster-wheel a {
+    padding-top: 104px;
+    background-position: -280px -7px;
+  }
+  #obstacles li.down-the-hatch a {
+    background-position: -420px -7px;
+  }
+  #obstacles li.pick-it a {
+    background-position: -560px -7px;
+  }
+  #obstacles li.the-wringer a {
+    background-position: -700px -7px;
+  }
+  #obstacles li:hover a, #obstacles li.selected a {
+    background-position-y: -147px !important;
+  }
+
+  #obstacle {
+    height: 480px;
+  }
+  #obstacle header {
+    padding-top: 30px;
+    height: 160px;
+    -moz-background-size: 180px 165px;
+    -webkit-background-size: 180px 165px;
+    -o-background-size: 180px 165px;
+    background-size: 180px 165px;
+  }
+  #obstacle header h1 {
+    font-size: 30px;
+  }
+  #obstacle header h2 {
+    font-size: 18px;
+  }
+  #obstacle img {
+    max-height: 365px;
+    max-width: 360px;
+  }
+}
+@media screen and (max-width: 730px) {
+  #obstacles .container {
+    padding-top: 25px;
+  }
+  #obstacles .container > header.section {
+    margin-bottom: 30px;
+  }
+  #obstacles ul {
+    width: 80px;
+  }
+  #obstacles li {
+    margin-right: 0px !important;
+    margin-bottom: 5px;
+  }
+  #obstacles li a {
+    width: 80px;
+    height: 80px;
+    -moz-background-size: 480px 160px;
+    -webkit-background-size: 480px 160px;
+    -o-background-size: 480px 160px;
+    background-size: 480px 160px;
     text-indent: -9999px;
   }
   #obstacles li.the-tank a {
-    background: url('../images/obstacles/sprite.png?1319259254') 3px 3px no-repeat;
+    background-position: 0px 3px;
   }
   #obstacles li.sundae-slide a {
-    background: url('../images/obstacles/sprite.png?1319259254') -41px 3px no-repeat;
+    background-position: -80px 3px;
   }
   #obstacles li.human-hamster-wheel a {
-    background: url('../images/obstacles/sprite.png?1319259254') -85px 3px no-repeat;
+    padding-top: 88%;
+    background-position: -160px 3px;
   }
   #obstacles li.down-the-hatch a {
-    background: url('../images/obstacles/sprite.png?1319259254') -129px 3px no-repeat;
+    background-position: -240px 3px;
   }
   #obstacles li.pick-it a {
-    background: url('../images/obstacles/sprite.png?1319259254') -173px 3px no-repeat;
+    background-position: -320px 3px;
   }
   #obstacles li.the-wringer a {
-    background: url('../images/obstacles/sprite.png?1319259254') -217px 3px no-repeat;
+    background-position: -400px 3px;
   }
   #obstacles li:hover a, #obstacles li.selected a {
-    background-position-y: -41px !important;
+    background-position-y: -80px !important;
   }
 
   #obstacle {
     position: relative;
     float: right;
-    width: 310px;
-    height: auto;
-    min-height: 380px;
+    width: 80%;
+    height: 490px;
     padding-bottom: 30px;
   }
   #obstacle header {
+    float: left;
+    margin-top: 0;
+  }
+  #obstacle img {
+    max-width: 400px;
+    max-height: 480px;
+    margin: 0 auto;
+  }
+  #obstacle.sundae-slide img {
+    right: 0px;
+    max-height: 430px;
+  }
+  #obstacle.down-the-hatch img {
+    right: 0px;
+    max-height: 420px;
+  }
+}
+@media screen and (max-width: 545px) {
+  #obstacle img {
+    max-width: 100% !important;
+    max-height: 400px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  #obstacles .container {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
+  #obstacles nav {
+    height: 75px;
+  }
+  #obstacles ul {
+    width: auto;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  #obstacles li {
+    float: left;
+    margin-right: 2px !important;
+  }
+  #obstacles li a {
+    width: 75px;
+    height: 75px;
+    padding-top: 0;
+    -moz-background-size: 450px 150px;
+    -webkit-background-size: 450px 150px;
+    -o-background-size: 450px 150px;
+    background-size: 450px 150px;
+    text-indent: -9999px;
+  }
+  #obstacles li.the-tank a {
+    background-position: 0px 3px;
+  }
+  #obstacles li.sundae-slide a {
+    background-position: -75px 3px;
+  }
+  #obstacles li.human-hamster-wheel a {
+    background-position: -150px 3px;
+  }
+  #obstacles li.down-the-hatch a {
+    background-position: -225px 3px;
+  }
+  #obstacles li.pick-it a {
+    background-position: -300px 3px;
+  }
+  #obstacles li.the-wringer {
+    margin-right: 0 !important;
+  }
+  #obstacles li.the-wringer a {
+    background-position: -375px 3px;
+  }
+  #obstacles li:hover a, #obstacles li.selected a {
+    background-position-y: -72px !important;
+  }
+
+  #obstacle {
+    position: relative;
+    float: none;
+    width: 460px;
     height: auto;
-    margin-bottom: 25px;
+    min-height: 380px;
+    margin: 0 auto;
+    padding: 0 10px 30px;
+    text-align: center;
+  }
+  #obstacle header {
+    height: auto;
+    width: 100%;
+    margin: 0 auto 25px;
     padding-top: 0;
     background: transparent;
   }
@@ -1010,8 +1232,6 @@ section .container > header.section {
   }
   #obstacle img {
     position: static;
-    top: 100px;
-    max-width: 300px;
     margin: 0 auto;
   }
   #obstacle.sundae-slide img {
@@ -1019,6 +1239,45 @@ section .container > header.section {
   }
   #obstacle.down-the-hatch img {
     right: 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #obstacles li a {
+    width: 48px;
+    height: 48px;
+    -moz-background-size: 264px 88px;
+    -webkit-background-size: 264px 88px;
+    -o-background-size: 264px 88px;
+    background-size: 264px 88px;
+    text-indent: -9999px;
+  }
+  #obstacles li.the-tank a {
+    background-position: 3px 3px;
+  }
+  #obstacles li.sundae-slide a {
+    background-position: -41px 3px;
+  }
+  #obstacles li.human-hamster-wheel a {
+    background-position: -85px 3px;
+  }
+  #obstacles li.down-the-hatch a {
+    background-position: -129px 3px;
+  }
+  #obstacles li.pick-it a {
+    background-position: -173px 3px;
+  }
+  #obstacles li.the-wringer a {
+    background-position: -217px 3px;
+  }
+  #obstacles li:hover a, #obstacles li.selected a {
+    background-position-y: -41px !important;
+  }
+
+  #obstacle {
+    width: 300px;
+  }
+  #obstacle img {
+    max-width: 280px !important;
   }
 }
 /* prizes ----------------------------------------------------------------- */
