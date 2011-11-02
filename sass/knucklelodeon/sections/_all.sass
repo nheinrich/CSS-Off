@@ -1,5 +1,5 @@
 section .container
-  +layout-width
+  max-width: 940px
   margin: 0 auto
   > header.section
     margin-bottom: 55px
@@ -9,14 +9,11 @@ section .container
 
 // tablet --------------------------------------------------------------------
 
-@media screen and (max-width: 940px)
-  section .container
-    width: 768px
 
 // phone (portrait) ----------------------------------------------------------
 @media screen and (max-width: 768px)
   section .container
-    +portrait-width
+
     > header.section
       margin-bottom: 20px
       padding-left: 10px

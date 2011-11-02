@@ -10,7 +10,6 @@ body > nav
   z-index: 10
   +single-transition(background, .4s)
   ul
-    +layout-width
     margin: 0 auto
   li
     +inline-block
@@ -34,21 +33,16 @@ body > nav.scrolling
 
 // tablet --------------------------------------------------------------------
 
-@media screen and (max-width: 940px)
-  #intro
 
 
 // phone (portrait) ----------------------------------------------------------
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 650px)
   body > nav
-    +portrait-width
     position: relative
     height: 123px
     margin: 0 auto -123px
-    background: transparent
     ul
-      +portrait-width
       padding: 3px 3px 0
     li
       display: block

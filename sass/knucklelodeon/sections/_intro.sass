@@ -6,8 +6,7 @@
   background-position: -60px 0
   h1
     position: relative
-    left: -34px
-    width: 490px
+    left: -24px
     height: 430px
     margin: 0 auto 32px
     +replace-text("logos/triple-dare.png")
@@ -17,7 +16,7 @@
     color: $txt_orange
     text-align: center
     font-size: 51px
-    line-height: 64px
+    line-height: 1.3em
     +single-text-shadow(#fff, 2px, 3px, 0)
     margin-bottom: 13px
   h3
@@ -33,23 +32,25 @@
   #intro
 
 
-// phone (portrait) ----------------------------------------------------------
-@media screen and (max-width: 768px)
+@media screen and (max-width: 650px)
   #intro
     padding-bottom: 30px
     h1
-      left: 0px
-      +portrait_width
       height: 351px
       margin: 0 auto -60px
-      background-position: -59px
-      +background-size(400px 351px)      
-      // height: 281px
-      // background-position: -9px
-      // +background-size(320px, 281px)
+      background-position: center top
+      +background-size(400px 351px)
     h2
       position: relative
       margin-bottom: 20px
+      font-size: 40px
+    h3
+      position: relative
+      font-size: 19px
+
+@media screen and (max-width: 480px)
+  #intro
+    h2
       font-size: 24px
       line-height: 32px
     h3

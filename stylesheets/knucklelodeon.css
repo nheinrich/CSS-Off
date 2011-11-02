@@ -623,11 +623,6 @@ body > nav {
   transition-duration: 0.4s;
 }
 body > nav ul {
-  width: 940px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
   margin: 0 auto;
 }
 body > nav li {
@@ -667,16 +662,13 @@ body > nav.scrolling {
 }
 
 /* media queries ---------------------------------------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
   body > nav {
-    width: 320px;
     position: relative;
     height: 123px;
     margin: 0 auto -123px;
-    background: transparent;
   }
   body > nav ul {
-    width: 320px;
     padding: 3px 3px 0;
   }
   body > nav li {
@@ -705,11 +697,7 @@ body > nav.scrolling {
   }
 }
 section .container {
-  width: 940px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+  max-width: 940px;
   margin: 0 auto;
 }
 section .container > header.section {
@@ -718,15 +706,7 @@ section .container > header.section {
 }
 
 /* media queries ---------------------------------------------------------- */
-@media screen and (max-width: 940px) {
-  section .container {
-    width: 768px;
-  }
-}
 @media screen and (max-width: 768px) {
-  section .container {
-    width: 320px;
-  }
   section .container > header.section {
     margin-bottom: 20px;
     padding-left: 10px;
@@ -741,8 +721,7 @@ section .container > header.section {
 }
 #intro h1 {
   position: relative;
-  left: -34px;
-  width: 490px;
+  left: -24px;
   height: 430px;
   margin: 0 auto 32px;
   text-indent: -119988px;
@@ -759,7 +738,7 @@ section .container > header.section {
   color: #ff5822;
   text-align: center;
   font-size: 51px;
-  line-height: 64px;
+  line-height: 1.3em;
   text-shadow: white 2px 3px 0;
   margin-bottom: 13px;
 }
@@ -770,16 +749,14 @@ section .container > header.section {
 }
 
 /* media queries ---------------------------------------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
   #intro {
     padding-bottom: 30px;
   }
   #intro h1 {
-    left: 0px;
-    width: 320px;
     height: 351px;
     margin: 0 auto -60px;
-    background-position: -59px;
+    background-position: center top;
     -moz-background-size: 400px 351px;
     -webkit-background-size: 400px 351px;
     -o-background-size: 400px 351px;
@@ -788,6 +765,15 @@ section .container > header.section {
   #intro h2 {
     position: relative;
     margin-bottom: 20px;
+    font-size: 40px;
+  }
+  #intro h3 {
+    position: relative;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #intro h2 {
     font-size: 24px;
     line-height: 32px;
   }
