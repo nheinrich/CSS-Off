@@ -1810,6 +1810,7 @@ section .container > header.section {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   margin-right: 0;
+  width: 48.936%;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0;
