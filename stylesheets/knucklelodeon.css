@@ -1306,12 +1306,13 @@ section .container > header.section {
 }
 #prizes li {
   position: relative;
-  width: 400px;
+  width: 42.559%;
   float: left;
-  margin: 0 20px 100px 20px;
+  margin: 0 2.128% 100px 2.128%;
   padding-top: 20px;
   text-align: center;
   letter-spacing: 0;
+  line-height: 1.3em;
   /* items on left */
   /* items on right */
   /* items on bottom */
@@ -1367,30 +1368,21 @@ section .container > header.section {
   -o-animation: bobble 0.45s infinite;
   animation: bobble 0.45s infinite;
 }
+#prizes img {
+  width: 100%;
+}
 
 /* media queries ---------------------------------------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   #prizes .container {
     padding-top: 25px;
     padding-bottom: 25px;
   }
-  #prizes header.section {
-    margin-bottom: 35px;
-  }
-  #prizes ul {
-    padding: 0 10px;
-  }
   #prizes li {
-    width: 300px;
-    float: none;
-    margin: 0 0 40px !important;
-    padding-top: 0px;
-    text-align: center;
-    clear: both;
-  }
-  #prizes img {
-    width: 300px;
-    margin: 0 0 10px !important;
+    width: 80%;
+    float: none !important;
+    margin: 0 auto 50px !important;
+    padding-top: 0;
   }
 }
 /* register --------------------------------------------------------------- */
