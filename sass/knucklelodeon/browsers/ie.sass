@@ -5,9 +5,10 @@
 @import _pie.sass
 
 
-// IE specific styles (legacy) -----------------------------------------------
+/* IE specific styles ----------------------------------------------------- */
 
-// fonts ---------------------------------------------------------------------
+/* fonts ------------------------------------------------------------------ */
+/* added here due to need for different letter spacing */
 
 = digital-dream
   font-family: "DigitaldreamFat", "Arial", "Sans-serif"
@@ -20,50 +21,79 @@
   font-family: "KomikaTitle-Paint", "Arial Black", "Arial", "Sans-serif"
   letter-spacing: 2px
 
-// background ----------------------------------------------------------------
+
+/* background ------------------------------------------------------------- */
 
 body
 
 
-// typography ----------------------------------------------------------------
+
+/* typography ------------------------------------------------------------- */
 
 header.section h1
   +komika-title
 
 
-// navigation ----------------------------------------------------------------
+/* navigation ------------------------------------------------------------- */
 
-body > nav
-  line-height: 18px
-  background: #69bacf
-  &.scrolling
-    background: #29505b
+.ie8, .ie7, .ie6
+  body > nav
+    line-height: 18px
+    background: #69bacf
+    &.scrolling
+      background: #29505b
 
-// intro ---------------------------------------------------------------------
+
+/* intro ------------------------------------------------------------------ */
 
 #intro
   h2
     +komika-title
 
 
-// obstacles -----------------------------------------------------------------
+/* obstacles -------------------------------------------------------------- */
 
-#obstacles
-  ul
-    width: 480px
-  li
-    +pie
+.ie8, .ie7, .ie6
+  #obstacles
+    ul
+      width: 480px
+    li
+      +pie
     
-// prizes --------------------------------------------------------------------
+/* prizes ----------------------------------------------------------------- */
 
 
-// register ------------------------------------------------------------------
+/* register --------------------------------------------------------------- */
 
 #register
+  form
+    input
+      display: block
   aside
     #timer
       padding-top: 93px
-      padding-left: 10px
       +digital-dream
 
 
+/* register - media queries */
+
+@media screen and (max-width: 900px)
+  #register
+    aside
+      #timer
+        padding-top: 70px
+        font-size: 100px
+
+
+@media screen and (max-width: 805px)
+  #register
+    aside
+      #timer
+        padding-top: 45px
+        font-size: 70px
+
+
+@media screen and (max-width: 685px)
+  #register
+    aside
+      display: none

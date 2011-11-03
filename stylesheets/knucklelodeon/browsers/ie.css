@@ -1,4 +1,4 @@
-.pie-element, #obstacles li {
+.pie-element, .ie8 #obstacles li, .ie7 #obstacles li, .ie6 #obstacles li {
   behavior: url("/stylesheets/knucklelodeon/browsers/PIE.htc");
   position: relative;
 }
@@ -13,33 +13,64 @@
   z-index: 0;
 }
 
+/* IE specific styles ----------------------------------------------------- */
+/* fonts ------------------------------------------------------------------ */
+/* added here due to need for different letter spacing */
+/* background ------------------------------------------------------------- */
+/* typography ------------------------------------------------------------- */
 header.section h1 {
   font-family: "KomikaTitle-Paint", "Arial Black", "Arial", "Sans-serif";
   letter-spacing: 2px;
 }
 
-body > nav {
+/* navigation ------------------------------------------------------------- */
+.ie8 body > nav, .ie7 body > nav, .ie6 body > nav {
   line-height: 18px;
   background: #69bacf;
 }
-body > nav.scrolling {
+.ie8 body > nav.scrolling, .ie7 body > nav.scrolling, .ie6 body > nav.scrolling {
   background: #29505b;
 }
 
+/* intro ------------------------------------------------------------------ */
 #intro h2 {
   font-family: "KomikaTitle-Paint", "Arial Black", "Arial", "Sans-serif";
   letter-spacing: 2px;
 }
 
-#obstacles ul {
+/* obstacles -------------------------------------------------------------- */
+.ie8 #obstacles ul, .ie7 #obstacles ul, .ie6 #obstacles ul {
   width: 480px;
 }
 
+/* prizes ----------------------------------------------------------------- */
+/* register --------------------------------------------------------------- */
+#register form input {
+  display: block;
+}
 #register aside #timer {
   padding-top: 93px;
-  padding-left: 10px;
   font-family: "DigitaldreamFat", "Arial", "Sans-serif";
   font-size: 140px;
   color: #f3f200;
   letter-spacing: 0;
+}
+
+/* register - media queries */
+@media screen and (max-width: 900px) {
+  #register aside #timer {
+    padding-top: 70px;
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 805px) {
+  #register aside #timer {
+    padding-top: 45px;
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 685px) {
+  #register aside {
+    display: none;
+  }
 }
