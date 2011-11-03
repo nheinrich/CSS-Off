@@ -1386,10 +1386,6 @@ section .container > header.section {
   }
 }
 /* register --------------------------------------------------------------- */
-#obstacles, #prizes {
-  display: none;
-}
-
 #register {
   background: url('../images/textures/gray.png?1319262776');
   height: 850px;
