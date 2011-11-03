@@ -1,5 +1,8 @@
 /* register --------------------------------------------------------------- */
 
+#obstacles, #prizes
+  display: none
+
 #register
   +texture-blue(false)
   height: 850px
@@ -137,25 +140,23 @@
       +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)
 
   aside
-    +column(6, true)
+    width: 48.9361702%
     float: right
     padding-top: 10px
     text-align: center
     #timer
-      width: 386px
       height: 329px
       +box-sizing(border-box)
       margin: 0 auto 52px
       padding: 89px 0 0 5px
       +digital-dream
-      background: image_url("register/timer.png")
+      background: image_url("register/timer.png") center top no-repeat
     span
       display: block
-      width: 400px
       margin: 0 auto
       text-align: center
       font-size: 39px
-      line-height: 50px
+      line-height: 1.3em
       +single-text-shadow(rgba(0, 0, 0, .15), 3px, 4px, 0)
       span
         padding-top: 7px
@@ -167,46 +168,109 @@
 
 /* media queries ---------------------------------------------------------- */
 
-// tablet --------------------------------------------------------------------
-@media screen and (max-width: 940px)
+@media screen and (max-width: 900px)
   #register
+    aside
+      width: 40%
+      #timer
+        height: 246px
+        +background-size(289px 246px)
+        margin-bottom: 10px
+        padding-top: 70px
+        font-size: 100px
+      span
+        font-size: 28px
+        span
+          font-size: 24px
+          &.small
+            font-size: 21px
 
 
-// phone (portrait) ----------------------------------------------------------
-@media screen and (max-width: 768px)
+@media screen and (max-width: 805px)
   #register
+    aside
+      width: 33%
+      #timer
+        height: 170px
+        +background-size(193px 165px)
+        padding-top: 45px
+        font-size: 70px
+      span
+        font-size: 21px
+        span
+          font-size: 18px
+          &.small
+            font-size: 16px
+
+
+@media screen and (max-width: 665px)
+  #register
+    height: 750px  
     .container
-      padding-top: 25px
-      padding-bottom: 25px
-    header.section
-      h1
-        width: 300px
-        height: 105px
-        line-height: 48px
+      > header.section 
+        margin-bottom: 10px
+        h1
+          width: 360px
+          font-size: 30px
     form
-      width: 284px
-      margin-right: 0
-      padding: 0 6px
+      float: none
+      width: 444px
+      margin: 0 auto
       input
-        width: 272px
+        width: 416px
+      #color, .color
+        width: 264px
+      #gender, .gender
+        width: 165px    
+    aside
+      display: none
+
+
+@media screen and (max-width: 515px)
+  #register
+    padding: 0
+    .container
+      padding-top: 30px
+      > header.section
+        background: transparent
+        h1
+          padding: 0 10px        
+          background: transparent
+    form
+      width: 468px
+      margin: 0
+      padding-left: 4px      
+      input
+        width: 436px
+      #color, .color
+        width: 280px
+      #gender, .gender
+        width: 169px
+        
+        
+@media screen and (max-width: 479px)
+  #register
+    height: 800px
+    .container
+      padding-bottom: 0
+      > header.section
+        h1
+          font-size: 26px
+    form
+      width: 308px
+      margin: 0
+      input
+        width: 276px
       fieldset
         height: 113px
       #color, .color,
       #gender, .gender
         clear: both
-        width: 300px
+        width: 304px
         left: 0
-      #color, .color
         top: 0
         margin-right: 0
         margin-bottom: 15px
       #gender, .gender
         top: 65px
-      button
-        width: 290px
-    
-    .success
-      width: 290px
-      
-    aside
-      display: none
+        

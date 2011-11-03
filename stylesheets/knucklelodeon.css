@@ -1376,7 +1376,7 @@ section .container > header.section {
 @media screen and (max-width: 480px) {
   #prizes .container {
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
   }
   #prizes li {
     width: 80%;
@@ -1386,6 +1386,10 @@ section .container > header.section {
   }
 }
 /* register --------------------------------------------------------------- */
+#obstacles, #prizes {
+  display: none;
+}
+
 #register {
   background: url('../images/textures/gray.png?1319262776');
   height: 850px;
@@ -1597,19 +1601,12 @@ section .container > header.section {
   text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 #register aside {
-  width: 460px;
-  margin-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  margin-right: 0;
+  width: 48.936%;
   float: right;
   padding-top: 10px;
   text-align: center;
 }
 #register aside #timer {
-  width: 386px;
   height: 329px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1621,15 +1618,14 @@ section .container > header.section {
   font-size: 140px;
   color: #f3f200;
   text-shadow: black 7px 11px 0;
-  background: url('../images/register/timer.png?1319259254');
+  background: url('../images/register/timer.png?1319259254') center top no-repeat;
 }
 #register aside span {
   display: block;
-  width: 400px;
   margin: 0 auto;
   text-align: center;
   font-size: 39px;
-  line-height: 50px;
+  line-height: 1.3em;
   text-shadow: rgba(0, 0, 0, 0.15) 3px 4px 0;
 }
 #register aside span span {
@@ -1642,23 +1638,127 @@ section .container > header.section {
 }
 
 /* media queries ---------------------------------------------------------- */
-@media screen and (max-width: 768px) {
-  #register .container {
-    padding-top: 25px;
-    padding-bottom: 25px;
+@media screen and (max-width: 900px) {
+  #register aside {
+    width: 40%;
   }
-  #register header.section h1 {
-    width: 300px;
-    height: 105px;
-    line-height: 48px;
+  #register aside #timer {
+    height: 246px;
+    -moz-background-size: 289px 246px;
+    -webkit-background-size: 289px 246px;
+    -o-background-size: 289px 246px;
+    background-size: 289px 246px;
+    margin-bottom: 10px;
+    padding-top: 70px;
+    font-size: 100px;
+  }
+  #register aside span {
+    font-size: 28px;
+  }
+  #register aside span span {
+    font-size: 24px;
+  }
+  #register aside span span.small {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 805px) {
+  #register aside {
+    width: 33%;
+  }
+  #register aside #timer {
+    height: 170px;
+    -moz-background-size: 193px 165px;
+    -webkit-background-size: 193px 165px;
+    -o-background-size: 193px 165px;
+    background-size: 193px 165px;
+    padding-top: 45px;
+    font-size: 70px;
+  }
+  #register aside span {
+    font-size: 21px;
+  }
+  #register aside span span {
+    font-size: 18px;
+  }
+  #register aside span span.small {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 665px) {
+  #register {
+    height: 750px;
+  }
+  #register .container > header.section {
+    margin-bottom: 10px;
+  }
+  #register .container > header.section h1 {
+    width: 360px;
+    font-size: 30px;
   }
   #register form {
-    width: 284px;
-    margin-right: 0;
-    padding: 0 6px;
+    float: none;
+    width: 444px;
+    margin: 0 auto;
   }
   #register form input {
-    width: 272px;
+    width: 416px;
+  }
+  #register form #color, #register form .color {
+    width: 264px;
+  }
+  #register form #gender, #register form .gender {
+    width: 165px;
+  }
+  #register aside {
+    display: none;
+  }
+}
+@media screen and (max-width: 515px) {
+  #register {
+    padding: 0;
+  }
+  #register .container {
+    padding-top: 30px;
+  }
+  #register .container > header.section {
+    background: transparent;
+  }
+  #register .container > header.section h1 {
+    padding: 0 10px;
+    background: transparent;
+  }
+  #register form {
+    width: 468px;
+    margin: 0;
+    padding-left: 4px;
+  }
+  #register form input {
+    width: 436px;
+  }
+  #register form #color, #register form .color {
+    width: 280px;
+  }
+  #register form #gender, #register form .gender {
+    width: 169px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #register {
+    height: 800px;
+  }
+  #register .container {
+    padding-bottom: 0;
+  }
+  #register .container > header.section h1 {
+    font-size: 26px;
+  }
+  #register form {
+    width: 308px;
+    margin: 0;
+  }
+  #register form input {
+    width: 276px;
   }
   #register form fieldset {
     height: 113px;
@@ -1666,25 +1766,14 @@ section .container > header.section {
   #register form #color, #register form .color,
   #register form #gender, #register form .gender {
     clear: both;
-    width: 300px;
+    width: 304px;
     left: 0;
-  }
-  #register form #color, #register form .color {
     top: 0;
     margin-right: 0;
     margin-bottom: 15px;
   }
   #register form #gender, #register form .gender {
     top: 65px;
-  }
-  #register form button {
-    width: 290px;
-  }
-  #register .success {
-    width: 290px;
-  }
-  #register aside {
-    display: none;
   }
 }
 /* footer ----------------------------------------------------------------- */
