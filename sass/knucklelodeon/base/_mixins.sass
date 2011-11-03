@@ -10,25 +10,7 @@
 = texture($color)
   background: eval("$bg_#{$color}") image_url("textures/#{$color}.png")
 
-// using individual mixins until the above is working
-
-// = texture-blue($include_bg_color:true)
-//   @if $include_bg_color
-//     background: $bg_blue image_url("textures/blue.png")
-//   @else
-//     background: image_url("textures/blue.png")
-//
-// = texture-green
-//   background: $bg_green image_url("textures/green.png")
-//
-// = texture-orange
-//   background: $bg_orange image_url("textures/orange.png")
-//
-// = texture-yellow
-//   background: $bg_yellow image_url("textures/yellow.png")
-
-
-// overwrites to use gray color
+// using static mixin until the above is working
 
 = texture-blue($include_bg_color:true)
   @if $include_bg_color
